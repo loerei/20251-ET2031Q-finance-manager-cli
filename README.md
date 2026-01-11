@@ -57,4 +57,3 @@ The file is created automatically on the first run.
 
 ## Flowchart
 - Miro board: [Miro Flowchart](https://miro.com/app/board/uXjVGd4fsqQ=/?share_link_id=714558277659)
-
