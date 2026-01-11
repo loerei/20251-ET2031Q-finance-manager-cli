@@ -26,42 +26,130 @@
 
 # 3. Features
 ## Transactions
-- Manual transaction entry (income/expense).
-  - Inputs: date (YYYY-MM-DD or blank for today), amount (double), category (select or create), note.
-  - Outputs: updates `Account::txs`, `Account::balance`, and per-category balance.
-  - Limitations: strict date format; negative amounts default to "Other" if no category. (`src/finance_v3_0.cpp::main`, `src/finance_v3_0.cpp::Account::addManualTransaction`)
+- <details>
+  <summary>Manual transaction entry (income/expense).</summary>
+
+  **Related symbols**
+  - [`Account::addManualTransaction`](src/finance_v3_0.cpp)
+  - [`main`](src/finance_v3_0.cpp)
+
+  **Inputs**
+  - Date (YYYY-MM-DD or blank for today), amount (double), category (select or create), note.
+
+  **Outputs**
+  - Updates `Account::txs`, `Account::balance`, and per-category balance.
+
+  **Limitations**
+  - Strict date format; negative amounts default to "Other" if no category.
+  </details>
 
 ## Recurring schedules
-- Schedule types: every N days or monthly on a day of month.
-  - Inputs: schedule type, parameter (days or day-of-month), amount, category/auto-allocation, start date.
-  - Outputs: creates future transactions when processed up to a target date.
-  - Limitations: skips invalid parameters; guard prevents infinite loops if dates do not advance. (`src/finance_v3_0.cpp::Account::processSchedulesUpTo`)
+- <details>
+  <summary>Schedule types: every N days or monthly on a day of month.</summary>
+
+  **Related symbols**
+  - [`Account::processSchedulesUpTo`](src/finance_v3_0.cpp)
+  - [`addDays`](src/finance_v3_0.cpp)
+  - [`nextMonthlyOn`](src/finance_v3_0.cpp)
+
+  **Inputs**
+  - Schedule type, parameter (days or day-of-month), amount, category/auto-allocation, start date.
+
+  **Outputs**
+  - Creates future transactions when processed up to a target date.
+
+  **Limitations**
+  - Skips invalid parameters; guard prevents infinite loops if dates do not advance.
+  </details>
 
 ## Allocation by percentage
-- Auto-allocation for positive amounts across categories.
-  - Inputs: allocation percentages per category; income amount.
-  - Outputs: generated transactions for each category share.
-  - Limitations: if total allocation is zero, amount is assigned to "Other". (`src/finance_v3_0.cpp::Account::allocateAmount`, `src/finance_v3_0.cpp::interactiveAllocSetup`)
+- <details>
+  <summary>Auto-allocation for positive amounts across categories.</summary>
+
+  **Related symbols**
+  - [`Account::allocateAmount`](src/finance_v3_0.cpp)
+  - [`interactiveAllocSetup`](src/finance_v3_0.cpp)
+
+  **Inputs**
+  - Allocation percentages per category; income amount.
+
+  **Outputs**
+  - Generated transactions for each category share.
+
+  **Limitations**
+  - If total allocation is zero, amount is assigned to "Other".
+  </details>
 
 ## Interest
-- Per-category interest rules (monthly or annual converted to monthly).
-  - Inputs: category list, rate, frequency, start date.
-  - Outputs: interest transactions added per month up to a date.
-  - Limitations: interest only applied when category balance is positive for that month. (`src/finance_v3_0.cpp::Account::applyInterestUpTo`)
+- <details>
+  <summary>Per-category interest rules (monthly or annual converted to monthly).</summary>
+
+  **Related symbols**
+  - [`Account::applyInterestUpTo`](src/finance_v3_0.cpp)
+  - [`monthsBetweenInclusive`](src/finance_v3_0.cpp)
+  - [`addMonths`](src/finance_v3_0.cpp)
+
+  **Inputs**
+  - Category list, rate, frequency, start date.
+
+  **Outputs**
+  - Interest transactions added per month up to a date.
+
+  **Limitations**
+  - Interest only applied when category balance is positive for that month.
+  </details>
 
 ## Settings and localization
-- Settings: auto-save, auto-process on startup, and language selection.
-  - Inputs: menu choices; stored in save file.
-  - Outputs: affects program behavior and UI language.
-  - Limitations: available languages depend on locale files discovered at runtime. (`src/finance_v3_0.cpp::settingsMenu`, `config/i18n.h::I18n::availableLanguages`)
+- <details>
+  <summary>Settings: auto-save, auto-process on startup, and language selection.</summary>
+
+  **Related symbols**
+  - [`Settings`](src/finance_v3_0.cpp)
+  - [`settingsMenu`](src/finance_v3_0.cpp)
+  - [`I18n::availableLanguages`](config/i18n.h)
+  - [`I18n::get`](config/i18n.h)
+  - [`tr`](src/finance_v3_0.cpp)
+
+  **Inputs**
+  - Menu choices; stored in save file.
+
+  **Outputs**
+  - Affects program behavior and UI language.
+
+  **Limitations**
+  - Available languages depend on locale files discovered at runtime.
+  </details>
 
 ## Persistence and helpers
-- Save/load to a pipe-delimited text file with escaping.
-  - Inputs: filesystem path, in-memory account data.
-  - Outputs: `data/save/finance_save.txt` (default) and restored state on load.
-  - Limitations: no atomic save or backup found in v3.0 code. (`src/finance_v3_0.cpp::Account::saveToFile`, `src/finance_v3_0.cpp::Account::loadFromFile`)
-- Helper CLI flags:
-  - `--dump-loc`, `--list-locales`, `--dump-settings`, `--test-balance-load`. (`src/finance_v3_0.cpp::main`)
+- <details>
+  <summary>Save/load to a pipe-delimited text file with escaping.</summary>
+
+  **Related symbols**
+  - [`Account::saveToFile`](src/finance_v3_0.cpp)
+  - [`Account::loadFromFile`](src/finance_v3_0.cpp)
+  - [`escapeForSave`](src/finance_v3_0.cpp)
+  - [`splitEscaped`](src/finance_v3_0.cpp)
+  - [`unescapeLoaded`](src/finance_v3_0.cpp)
+
+  **Inputs**
+  - Filesystem path, in-memory account data.
+
+  **Outputs**
+  - `data/save/finance_save.txt` (default) and restored state on load.
+
+  **Limitations**
+  - No atomic save or backup found in v3.0 code.
+  </details>
+- <details>
+  <summary>Helper CLI flags.</summary>
+
+  **Related symbols**
+  - [`main`](src/finance_v3_0.cpp)
+  - [`I18n::getLoadDiagnostics`](config/i18n.h)
+
+  **Details**
+  - `--dump-loc`, `--list-locales`, `--dump-settings`, `--test-balance-load`.
+  </details>
 
 # 4. Usage Guide
 ## Build instructions (from repo)

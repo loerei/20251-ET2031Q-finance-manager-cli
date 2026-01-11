@@ -26,42 +26,130 @@
 
 # 3. Tính năng
 ## Giao dịch
-- Nhập giao dịch thủ công (thu/chi).
-  - Đầu vào: ngày (YYYY-MM-DD hoặc để trống là hôm nay), số tiền (double), danh mục (chọn hoặc tạo), ghi chú.
-  - Đầu ra: cập nhật `Account::txs`, `Account::balance` và số dư theo danh mục.
-  - Hạn chế: định dạng ngày nghiêm ngặt; số âm mặc định vào "Other" nếu không có danh mục. (`src/finance_v3_0.cpp::main`, `src/finance_v3_0.cpp::Account::addManualTransaction`)
+- <details>
+  <summary>Nhập giao dịch thủ công (thu/chi).</summary>
+
+  **Related symbols**
+  - [`Account::addManualTransaction`](src/finance_v3_0.cpp)
+  - [`main`](src/finance_v3_0.cpp)
+
+  **Đầu vào**
+  - Ngày (YYYY-MM-DD hoặc để trống là hôm nay), số tiền (double), danh mục (chọn hoặc tạo), ghi chú.
+
+  **Đầu ra**
+  - Cập nhật `Account::txs`, `Account::balance` và số dư theo danh mục.
+
+  **Hạn chế**
+  - Định dạng ngày nghiêm ngặt; số âm mặc định vào "Other" nếu không có danh mục.
+  </details>
 
 ## Lịch lặp
-- Loại lịch: mỗi N ngày hoặc hàng tháng vào một ngày trong tháng.
-  - Đầu vào: loại lịch, tham số (ngày hoặc ngày trong tháng), số tiền, danh mục/tự phân bổ, ngày bắt đầu.
-  - Đầu ra: tạo giao dịch tương lai khi xử lý đến một mốc ngày.
-  - Hạn chế: bỏ qua tham số không hợp lệ; cơ chế guard ngăn vòng lặp vô hạn nếu ngày không tiến. (`src/finance_v3_0.cpp::Account::processSchedulesUpTo`)
+- <details>
+  <summary>Loại lịch: mỗi N ngày hoặc hàng tháng vào một ngày trong tháng.</summary>
+
+  **Related symbols**
+  - [`Account::processSchedulesUpTo`](src/finance_v3_0.cpp)
+  - [`addDays`](src/finance_v3_0.cpp)
+  - [`nextMonthlyOn`](src/finance_v3_0.cpp)
+
+  **Đầu vào**
+  - Loại lịch, tham số (ngày hoặc ngày trong tháng), số tiền, danh mục/tự phân bổ, ngày bắt đầu.
+
+  **Đầu ra**
+  - Tạo giao dịch tương lai khi xử lý đến một mốc ngày.
+
+  **Hạn chế**
+  - Bỏ qua tham số không hợp lệ; cơ chế guard ngăn vòng lặp vô hạn nếu ngày không tiến.
+  </details>
 
 ## Phân bổ theo tỷ lệ
-- Tự phân bổ cho số dương theo danh mục.
-  - Đầu vào: tỷ lệ phần trăm theo danh mục; số tiền thu nhập.
-  - Đầu ra: tạo giao dịch cho phần chia của từng danh mục.
-  - Hạn chế: nếu tổng tỷ lệ bằng 0, số tiền được gán vào "Other". (`src/finance_v3_0.cpp::Account::allocateAmount`, `src/finance_v3_0.cpp::interactiveAllocSetup`)
+- <details>
+  <summary>Tự phân bổ cho số dương theo danh mục.</summary>
+
+  **Related symbols**
+  - [`Account::allocateAmount`](src/finance_v3_0.cpp)
+  - [`interactiveAllocSetup`](src/finance_v3_0.cpp)
+
+  **Đầu vào**
+  - Tỷ lệ phần trăm theo danh mục; số tiền thu nhập.
+
+  **Đầu ra**
+  - Tạo giao dịch cho phần chia của từng danh mục.
+
+  **Hạn chế**
+  - Nếu tổng tỷ lệ bằng 0, số tiền được gán vào "Other".
+  </details>
 
 ## Lãi suất
-- Quy tắc lãi theo danh mục (tháng hoặc năm quy đổi theo tháng).
-  - Đầu vào: danh sách danh mục, mức lãi, tần suất, ngày bắt đầu.
-  - Đầu ra: giao dịch lãi được thêm theo tháng đến một mốc ngày.
-  - Hạn chế: lãi chỉ áp dụng khi số dư danh mục dương trong tháng đó. (`src/finance_v3_0.cpp::Account::applyInterestUpTo`)
+- <details>
+  <summary>Quy tắc lãi theo danh mục (tháng hoặc năm quy đổi theo tháng).</summary>
+
+  **Related symbols**
+  - [`Account::applyInterestUpTo`](src/finance_v3_0.cpp)
+  - [`monthsBetweenInclusive`](src/finance_v3_0.cpp)
+  - [`addMonths`](src/finance_v3_0.cpp)
+
+  **Đầu vào**
+  - Danh sách danh mục, mức lãi, tần suất, ngày bắt đầu.
+
+  **Đầu ra**
+  - Giao dịch lãi được thêm theo tháng đến một mốc ngày.
+
+  **Hạn chế**
+  - Lãi chỉ áp dụng khi số dư danh mục dương trong tháng đó.
+  </details>
 
 ## Cài đặt và bản địa hóa
-- Cài đặt: tự lưu, tự xử lý khi khởi động, và chọn ngôn ngữ.
-  - Đầu vào: lựa chọn trong menu; lưu trong tệp save.
-  - Đầu ra: ảnh hưởng hành vi chương trình và ngôn ngữ UI.
-  - Hạn chế: ngôn ngữ khả dụng phụ thuộc file locale được phát hiện khi chạy. (`src/finance_v3_0.cpp::settingsMenu`, `config/i18n.h::I18n::availableLanguages`)
+- <details>
+  <summary>Cài đặt: tự lưu, tự xử lý khi khởi động, và chọn ngôn ngữ.</summary>
+
+  **Related symbols**
+  - [`Settings`](src/finance_v3_0.cpp)
+  - [`settingsMenu`](src/finance_v3_0.cpp)
+  - [`I18n::availableLanguages`](config/i18n.h)
+  - [`I18n::get`](config/i18n.h)
+  - [`tr`](src/finance_v3_0.cpp)
+
+  **Đầu vào**
+  - Lựa chọn trong menu; lưu trong tệp save.
+
+  **Đầu ra**
+  - Ảnh hưởng hành vi chương trình và ngôn ngữ UI.
+
+  **Hạn chế**
+  - Ngôn ngữ khả dụng phụ thuộc file locale được phát hiện khi chạy.
+  </details>
 
 ## Lưu trữ và tiện ích
-- Lưu/tải vào tệp văn bản phân tách bằng dấu `|` với cơ chế escape.
-  - Đầu vào: đường dẫn hệ thống tệp, dữ liệu tài khoản trong bộ nhớ.
-  - Đầu ra: `data/save/finance_save.txt` (mặc định) và trạng thái được khôi phục khi tải.
-  - Hạn chế: không thấy lưu nguyên tử hoặc backup trong mã v3.0. (`src/finance_v3_0.cpp::Account::saveToFile`, `src/finance_v3_0.cpp::Account::loadFromFile`)
-- Cờ CLI hỗ trợ:
-  - `--dump-loc`, `--list-locales`, `--dump-settings`, `--test-balance-load`. (`src/finance_v3_0.cpp::main`)
+- <details>
+  <summary>Lưu/tải vào tệp văn bản phân tách bằng dấu `|` với cơ chế escape.</summary>
+
+  **Related symbols**
+  - [`Account::saveToFile`](src/finance_v3_0.cpp)
+  - [`Account::loadFromFile`](src/finance_v3_0.cpp)
+  - [`escapeForSave`](src/finance_v3_0.cpp)
+  - [`splitEscaped`](src/finance_v3_0.cpp)
+  - [`unescapeLoaded`](src/finance_v3_0.cpp)
+
+  **Đầu vào**
+  - Đường dẫn hệ thống tệp, dữ liệu tài khoản trong bộ nhớ.
+
+  **Đầu ra**
+  - `data/save/finance_save.txt` (mặc định) và trạng thái được khôi phục khi tải.
+
+  **Hạn chế**
+  - Không thấy lưu nguyên tử hoặc backup trong mã v3.0.
+  </details>
+- <details>
+  <summary>Cờ CLI hỗ trợ.</summary>
+
+  **Related symbols**
+  - [`main`](src/finance_v3_0.cpp)
+  - [`I18n::getLoadDiagnostics`](config/i18n.h)
+
+  **Chi tiết**
+  - `--dump-loc`, `--list-locales`, `--dump-settings`, `--test-balance-load`.
+  </details>
 
 # 4. Hướng dẫn sử dụng
 ## Hướng dẫn build (từ repo)
