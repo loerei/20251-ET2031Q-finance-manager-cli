@@ -39,8 +39,6 @@
   **Đầu ra**
   - Cập nhật `Account::txs`, `Account::balance` và số dư theo danh mục.
 
-  **Hạn chế**
-  - Định dạng ngày nghiêm ngặt; số âm mặc định vào "Other" nếu không có danh mục.
   </details>
 
 ## Lịch lặp
@@ -58,8 +56,6 @@
   **Đầu ra**
   - Tạo giao dịch tương lai khi xử lý đến một mốc ngày.
 
-  **Hạn chế**
-  - Bỏ qua tham số không hợp lệ; cơ chế guard ngăn vòng lặp vô hạn nếu ngày không tiến.
   </details>
 
 ## Phân bổ theo tỷ lệ
@@ -76,8 +72,6 @@
   **Đầu ra**
   - Tạo giao dịch cho phần chia của từng danh mục.
 
-  **Hạn chế**
-  - Nếu tổng tỷ lệ bằng 0, số tiền được gán vào "Other".
   </details>
 
 ## Lãi suất
@@ -95,8 +89,6 @@
   **Đầu ra**
   - Giao dịch lãi được thêm theo tháng đến một mốc ngày.
 
-  **Hạn chế**
-  - Lãi chỉ áp dụng khi số dư danh mục dương trong tháng đó.
   </details>
 
 ## Cài đặt và bản địa hóa
@@ -116,8 +108,6 @@
   **Đầu ra**
   - Ảnh hưởng hành vi chương trình và ngôn ngữ UI.
 
-  **Hạn chế**
-  - Ngôn ngữ khả dụng phụ thuộc file locale được phát hiện khi chạy.
   </details>
 
 ## Lưu trữ và tiện ích
@@ -138,7 +128,7 @@
   - `data/save/finance_save.txt` (mặc định) và trạng thái được khôi phục khi tải.
 
   **Hạn chế**
-  - Không thấy lưu nguyên tử hoặc backup trong mã v3.0.
+  - Không thấy atomic save hoặc backup trong mã v3.0.
   </details>
 - <details>
   <summary>Cờ CLI hỗ trợ.</summary>
@@ -358,8 +348,8 @@ TXS
 - Tính lại số dư từ giao dịch để tránh dữ liệu cũ. (`src/finance_v3_0.cpp::Account::loadFromFile`)
 - Tạo thư mục lưu nếu thiếu. (`src/finance_v3_0.cpp::Account::saveToFile`)
 
-## Lưu nguyên tử và khôi phục
-- Lưu nguyên tử: Unknown / Not found in repo for v3.0 (save ghi trực tiếp vào tệp).
+## atomic save và khôi phục
+- atomic save: Unknown / Not found in repo for v3.0 (save ghi trực tiếp vào tệp).
 - Tệp backup hoặc khôi phục: Unknown / Not found in repo.
 - Phiên bản hóa tệp lưu: Unknown / Not found in repo.
 
@@ -390,12 +380,12 @@ TXS
 - Ứng dụng CLI quản lý tài chính với giao dịch, lịch, phân bổ, lãi, bản địa hóa và lưu/tải.
 
 ## Hạn chế đã biết
-- Lưu dữ liệu không nguyên tử trong v3.0; không thấy cơ chế backup/khôi phục.
+- Lưu dữ liệu không bảo đảm tính nguyên tử trong v3.0; không thấy cơ chế backup/khôi phục.
 - Không có unit test tự động trong repo; chỉ có helper chẩn đoán.
 - `bits/stdc++.h` giảm tính tương thích trên toolchain không dùng GCC.
 
 ## Đề xuất cải tiến
-- Thêm lưu nguyên tử và chiến lược backup để an toàn dữ liệu.
+- Thêm atomic save và chiến lược backup để an toàn dữ liệu.
 - Thêm unit test cho parsing, lịch và logic lãi.
 - Thay `bits/stdc++.h` bằng các header chuẩn cụ thể để tăng tính di động.
 
@@ -525,5 +515,4 @@ TXS
 - Bước: nhập ngày không hợp lệ (vd: 2024-13-40).
 - Kỳ vọng: báo lỗi và yêu cầu nhập lại.
 - Thực tế: báo lỗi và yêu cầu nhập lại.
-
 

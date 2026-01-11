@@ -8,7 +8,7 @@ Chương trình dòng lệnh đa ngôn ngữ ghi thu chi, quản lý khoản đ�
 - Phân bổ danh mục với số dư theo từng danh mục
 - Quy tắc lãi theo danh mục (theo tháng hoặc theo năm)
 - Cài đặt tự lưu, tự xử lý khi khởi động và ngôn ngữ
-- Định dạng lưu nguyên tử với cơ chế escape và bảo vệ khôi phục
+- Định dạng atomic save với cơ chế escape và bảo vệ khôi phục
 - Giải quyết đường dẫn lưu trữ linh hoạt (chạy được từ mọi thư mục làm việc)
 - Bộ nạp i18n tìm locale trong các thư mục con
 
@@ -18,7 +18,7 @@ Chương trình dòng lệnh đa ngôn ngữ ghi thu chi, quản lý khoản đ�
 - `config/` - `i18n.h` và các file locale trong `config/locales/`
 - `data/save/` - dữ liệu lưu bền vững (`finance_save.txt`)
 - `docs/` - tài liệu hướng dẫn khởi chạy
-- `Reference/` - tài liệu thử nghiệm và script hỗ trợ (bao gồm trình chạy lưu nguyên tử)
+- `Reference/` - tài liệu thử nghiệm và script hỗ trợ (bao gồm trình chạy atomic save)
 - `output/` - đầu ra debug tùy chọn
 - `tests/` - dành cho các bài test bổ sung (hiện trống)
 

@@ -39,8 +39,6 @@
   **Outputs**
   - Updates `Account::txs`, `Account::balance`, and per-category balance.
 
-  **Limitations**
-  - Strict date format; negative amounts default to "Other" if no category.
   </details>
 
 ## Recurring schedules
@@ -58,8 +56,6 @@
   **Outputs**
   - Creates future transactions when processed up to a target date.
 
-  **Limitations**
-  - Skips invalid parameters; guard prevents infinite loops if dates do not advance.
   </details>
 
 ## Allocation by percentage
@@ -76,8 +72,6 @@
   **Outputs**
   - Generated transactions for each category share.
 
-  **Limitations**
-  - If total allocation is zero, amount is assigned to "Other".
   </details>
 
 ## Interest
@@ -95,8 +89,6 @@
   **Outputs**
   - Interest transactions added per month up to a date.
 
-  **Limitations**
-  - Interest only applied when category balance is positive for that month.
   </details>
 
 ## Settings and localization
@@ -116,8 +108,6 @@
   **Outputs**
   - Affects program behavior and UI language.
 
-  **Limitations**
-  - Available languages depend on locale files discovered at runtime.
   </details>
 
 ## Persistence and helpers

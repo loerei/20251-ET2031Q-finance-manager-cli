@@ -136,12 +136,12 @@
 
 ---
 
-## Phiên bản 2.3 (Lưu nguyên tử + nhật ký thao tác)
+## Phiên bản 2.3 (atomic save + nhật ký thao tác)
 **Tệp:** `finance_v2_3.cpp`
 **Trạng thái:** Độ tin cậy & kiểm toán
 
 ### Thay đổi so với 2.2:
-- Lưu nguyên tử qua file tạm + đổi tên để giảm nguy cơ hỏng dữ liệu.
+- atomic save qua file tạm + đổi tên để giảm nguy cơ hỏng dữ liệu.
 - Thêm log thao tác append-only (`finance_full_log.txt`) cho audit/debug.
 - Gộp giao dịch và snapshot để tránh trùng và hỗ trợ xử lý lịch/lãi an toàn hơn.
 
