@@ -30,8 +30,8 @@
   <summary>Manual transaction entry (income/expense).</summary>
 
   **Related symbols**
-  - [`Account::addManualTransaction`](../src/finance_v3_0.cpp)
-  - [`main`](../src/finance_v3_0.cpp)
+  - [`Account::addManualTransaction`](../src/finance_v3_0.cpp#L494)
+  - [`main`](../src/finance_v3_0.cpp#L1458)
 
   **Inputs**
   - Date (YYYY-MM-DD or blank for today), amount (double), category (select or create), note.
@@ -48,9 +48,9 @@
   <summary>Schedule types: every N days or monthly on a day of month.</summary>
 
   **Related symbols**
-  - [`Account::processSchedulesUpTo`](../src/finance_v3_0.cpp)
-  - [`addDays`](../src/finance_v3_0.cpp)
-  - [`nextMonthlyOn`](../src/finance_v3_0.cpp)
+  - [`Account::processSchedulesUpTo`](../src/finance_v3_0.cpp#L559)
+  - [`addDays`](../src/finance_v3_0.cpp#L226)
+  - [`nextMonthlyOn`](../src/finance_v3_0.cpp#L263)
 
   **Inputs**
   - Schedule type, parameter (days or day-of-month), amount, category/auto-allocation, start date.
@@ -67,8 +67,8 @@
   <summary>Auto-allocation for positive amounts across categories.</summary>
 
   **Related symbols**
-  - [`Account::allocateAmount`](../src/finance_v3_0.cpp)
-  - [`interactiveAllocSetup`](../src/finance_v3_0.cpp)
+  - [`Account::allocateAmount`](../src/finance_v3_0.cpp#L525)
+  - [`interactiveAllocSetup`](../src/finance_v3_0.cpp#L1162)
 
   **Inputs**
   - Allocation percentages per category; income amount.
@@ -85,9 +85,9 @@
   <summary>Per-category interest rules (monthly or annual converted to monthly).</summary>
 
   **Related symbols**
-  - [`Account::applyInterestUpTo`](../src/finance_v3_0.cpp)
-  - [`monthsBetweenInclusive`](../src/finance_v3_0.cpp)
-  - [`addMonths`](../src/finance_v3_0.cpp)
+  - [`Account::applyInterestUpTo`](../src/finance_v3_0.cpp#L622)
+  - [`monthsBetweenInclusive`](../src/finance_v3_0.cpp#L293)
+  - [`addMonths`](../src/finance_v3_0.cpp#L237)
 
   **Inputs**
   - Category list, rate, frequency, start date.
@@ -104,11 +104,11 @@
   <summary>Settings: auto-save, auto-process on startup, and language selection.</summary>
 
   **Related symbols**
-  - [`Settings`](../src/finance_v3_0.cpp)
-  - [`settingsMenu`](../src/finance_v3_0.cpp)
-  - [`I18n::availableLanguages`](../config/i18n.h)
-  - [`I18n::get`](../config/i18n.h)
-  - [`tr`](../src/finance_v3_0.cpp)
+  - [`Settings`](../src/finance_v3_0.cpp#L66)
+  - [`settingsMenu`](../src/finance_v3_0.cpp#L1329)
+  - [`I18n::availableLanguages`](../config/i18n.h#L253)
+  - [`I18n::get`](../config/i18n.h#L228)
+  - [`tr`](../src/finance_v3_0.cpp#L970)
 
   **Inputs**
   - Menu choices; stored in save file.
@@ -125,11 +125,11 @@
   <summary>Save/load to a pipe-delimited text file with escaping.</summary>
 
   **Related symbols**
-  - [`Account::saveToFile`](../src/finance_v3_0.cpp)
-  - [`Account::loadFromFile`](../src/finance_v3_0.cpp)
-  - [`escapeForSave`](../src/finance_v3_0.cpp)
-  - [`splitEscaped`](../src/finance_v3_0.cpp)
-  - [`unescapeLoaded`](../src/finance_v3_0.cpp)
+  - [`Account::saveToFile`](../src/finance_v3_0.cpp#L726)
+  - [`Account::loadFromFile`](../src/finance_v3_0.cpp#L781)
+  - [`escapeForSave`](../src/finance_v3_0.cpp#L318)
+  - [`splitEscaped`](../src/finance_v3_0.cpp#L348)
+  - [`unescapeLoaded`](../src/finance_v3_0.cpp#L332)
 
   **Inputs**
   - Filesystem path, in-memory account data.
@@ -144,8 +144,8 @@
   <summary>Helper CLI flags.</summary>
 
   **Related symbols**
-  - [`main`](../src/finance_v3_0.cpp)
-  - [`I18n::getLoadDiagnostics`](../config/i18n.h)
+  - [`main`](../src/finance_v3_0.cpp#L1458)
+  - [`I18n::getLoadDiagnostics`](../config/i18n.h#L46)
 
   **Details**
   - `--dump-loc`, `--list-locales`, `--dump-settings`, `--test-balance-load`.
@@ -536,4 +536,5 @@ TXS
   - Add transaction flow
   - Schedule list/summary
   - Interest setup screen
+
 
