@@ -2,10 +2,10 @@
 - Tổng quan dự án: ứng dụng console C++17 để theo dõi tài chính cá nhân với giao dịch, lịch lặp, phân bổ theo danh mục và lãi suất theo danh mục. Triển khai chính nằm ở `src/finance_v3_0.cpp`.
 - Mục tiêu: cho phép ghi nhận thu/chi, tự phân bổ thu nhập theo tỷ lệ danh mục, xử lý giao dịch theo lịch và áp dụng lãi; lưu dữ liệu vào tệp lưu cục bộ.
 - Người dùng mục tiêu: cá nhân quản lý tài chính trong môi trường terminal/CLI.
-- Tóm tắt tính năng mức cao (quan sát trong mã): giao dịch thủ công, lịch lặp, quy tắc phân bổ, quy tắc lãi, cài đặt (tự lưu, tự xử lý khi khởi động, ngôn ngữ), lưu tệp, và giao diện đa ngôn ngữ qua file locale.
+- Tóm tắt tính năng mức cao : giao dịch thủ công, lịch lặp, quy tắc phân bổ, quy tắc lãi, cài đặt (tự lưu, tự xử lý khi khởi động, ngôn ngữ), lưu tệp, và giao diện đa ngôn ngữ qua file locale.
 
 # 2. Yêu cầu và phạm vi
-## Yêu cầu chức năng (quan sát trong mã)
+## Yêu cầu chức năng 
 - Ghi nhận giao dịch thủ công với ngày, số tiền, danh mục và ghi chú. (`src/finance_v3_0.cpp::Account::addManualTransaction`)
 - Định nghĩa lịch định kỳ (mỗi N ngày hoặc hàng tháng vào một ngày cụ thể) và xử lý đến một mốc ngày. (`src/finance_v3_0.cpp::Account::processSchedulesUpTo`)
 - Phân bổ thu nhập theo tỷ lệ danh mục, với "Other" là phần còn lại. (`src/finance_v3_0.cpp::Account::allocateAmount`, `src/finance_v3_0.cpp::interactiveAllocSetup`)
@@ -13,7 +13,7 @@
 - Lưu và tải lại toàn bộ dữ liệu tài khoản từ tệp cục bộ. (`src/finance_v3_0.cpp::Account::saveToFile`, `src/finance_v3_0.cpp::Account::loadFromFile`)
 - Cung cấp CLI theo menu có cài đặt và bản địa hóa. (`src/finance_v3_0.cpp::printMenu`, `src/finance_v3_0.cpp::settingsMenu`, `config/i18n.h::I18n`)
 
-## Yêu cầu phi chức năng (quan sát trong mã)
+## Yêu cầu phi chức năng 
 - Tính di động: dùng C++17 chuẩn và `std::filesystem`; sử dụng API console Windows dưới `#ifdef _WIN32`. (`src/finance_v3_0.cpp`)
 - Tính toàn vẹn dữ liệu: kiểm tra đầu vào và phân tích phòng thủ cho tệp lưu; tính lại số dư từ giao dịch khi tải. (`src/finance_v3_0.cpp::tryParseDate`, `src/finance_v3_0.cpp::Account::loadFromFile`)
 - Ràng buộc UX: chỉ CLI, theo menu, nhắc nhập văn bản; ESC hoặc "esc" có thể hủy một số luồng. (`src/finance_v3_0.cpp::getlineAllowEsc`)

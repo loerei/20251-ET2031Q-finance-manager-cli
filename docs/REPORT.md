@@ -2,10 +2,10 @@
 - Project overview: a C++17 console application for personal finance tracking with transactions, recurring schedules, category allocation, and per-category interest. Primary implementation is `src/finance_v3_0.cpp`.
 - Goals: allow users to record income/expenses, auto-allocate income by category percentage, process scheduled transactions, and apply interest; persist data to a local save file.
 - Target users: individuals managing personal finances in a terminal/CLI environment.
-- High-level feature summary (observed in code): manual transactions, recurring schedules, allocation rules, interest rules, settings (auto-save, auto-process on startup, language), file persistence, and multi-language UI via locale files.
+- High-level feature summary : manual transactions, recurring schedules, allocation rules, interest rules, settings (auto-save, auto-process on startup, language), file persistence, and multi-language UI via locale files.
 
 # 2. Requirements and Scope
-## Functional requirements (observed in code)
+## Functional requirements 
 - Record manual transactions with date, amount, category, and note. (`src/finance_v3_0.cpp::Account::addManualTransaction`)
 - Define recurring schedules (every N days or monthly on a specific day) and process them up to a date. (`src/finance_v3_0.cpp::Account::processSchedulesUpTo`)
 - Allocate income across categories by percentage, with "Other" as remainder. (`src/finance_v3_0.cpp::Account::allocateAmount`, `src/finance_v3_0.cpp::interactiveAllocSetup`)
@@ -13,7 +13,7 @@
 - Persist and reload all account data from a local file. (`src/finance_v3_0.cpp::Account::saveToFile`, `src/finance_v3_0.cpp::Account::loadFromFile`)
 - Provide a menu-driven CLI with settings and localization. (`src/finance_v3_0.cpp::printMenu`, `src/finance_v3_0.cpp::settingsMenu`, `config/i18n.h::I18n`)
 
-## Non-functional requirements (observed in code)
+## Non-functional requirements 
 - Portability: uses standard C++17 and `std::filesystem`; includes Windows console APIs behind `#ifdef _WIN32`. (`src/finance_v3_0.cpp`)
 - Data integrity: input validation and defensive parsing for save files; recompute balances from transactions on load. (`src/finance_v3_0.cpp::tryParseDate`, `src/finance_v3_0.cpp::Account::loadFromFile`)
 - UX constraints: CLI-only, menu-driven, text prompts; ESC or "esc" can cancel some flows. (`src/finance_v3_0.cpp::getlineAllowEsc`)
