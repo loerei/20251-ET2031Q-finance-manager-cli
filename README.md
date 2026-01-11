@@ -56,4 +56,5 @@ The file is created automatically on the first run.
 - Latest source and binary in this repo: `src/finance_v3_0.cpp` and `bin/finance_v3_0.exe`.
 
 ## Flowchart
-- Miro board: https://miro.com/app/board/uXjVGd4fsqQ=/?share_link_id=714558277659
+- Miro board: [Miro Flowchart](https://miro.com/app/board/uXjVGd4fsqQ=/?share_link_id=714558277659)
+
