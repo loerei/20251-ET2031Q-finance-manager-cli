@@ -1,0 +1,97 @@
+# Kunci tambahan Bahasa Indonesia yang ditambahkan oleh refactor
+prompt_date=Tanggal (YYYY-MM-DD) [kosong = hari ini]: 
+invalid_date_format=Format tanggal tidak valid. Gunakan YYYY-MM-DD.
+
+prompt_amount=Jumlah (positif = pemasukan, negatif = pengeluaran): 
+invalid_amount=Jumlah tidak valid.
+
+prompt_category_info=Masukkan kategori atau nomornya, atau kosongkan untuk Alokasi otomatis (untuk pemasukan).
+existing_categories=Kategori yang ada:
+prompt_category=Kategori (nama atau nomor) [kosong = Alokasi otomatis]: 
+
+prompt_note=Catatan: 
+
+added_auto_allocated=Ditambahkan dan dialokasikan otomatis berdasarkan persentase.
+added=Ditambahkan.
+scheduled_added=Transaksi terjadwal ditambahkan.
+
+alloc_intro=Masukkan persentase untuk setiap kategori, atau kosongkan untuk mempertahankan yang sekarang.
+alloc_note=(Catatan: persentase 'Lainnya' adalah sisa setelah penetapan ini.)
+alloc_remaining=Anda saat ini memiliki {PCT}% tersedia untuk Lainnya.
+invalid_input_extra=Input tidak valid (karakter ekstra). Coba lagi.
+invalid_input=Input tidak valid. Coba lagi.
+invalid_number=Angka tidak valid. Coba lagi.
+invalid_negative_percent=Persentase negatif tidak diperbolehkan. Masukkan nilai antara 0 dan 100.
+invalid_percent_over=Persentase tidak boleh melebihi 100. Masukkan nilai antara 0 dan 100.
+invalid_alloc_sum=Alokasi tidak valid: jumlah kategori {TOTAL}%. Harus antara 0 dan 100. Silakan masukkan ulang.
+allocations_updated=Alokasi diperbarui. 'Lainnya' diset ke sisa {PCT}%.
+prompt_category_name=Nama kategori (kosong = selesai): 
+no_categories_entered=Tidak ada kategori yang dimasukkan. Menggunakan default (Darurat, Hiburan, Tabungan, Lainnya).
+categories_created=Kategori dibuat.
+
+category_setup_header=--- Pengaturan kategori ---
+category_setup_prompt=Masukkan nama tampilan kategori, satu per baris. Tekan Enter pada baris kosong untuk selesai.
+category_setup_defaults=Jika Anda tidak memasukkan kategori, default akan digunakan.
+alloc_prompt_current_percent={NAME} (saat ini {PCT}%) - masukkan persentase baru atau kosongkan untuk mempertahankan: 
+
+saved_and_exiting=Tersimpan. Keluar.
+prompt_setup_alloc=Apakah Anda ingin mengatur persentase alokasi sekarang? (s = atur sekarang, l = biarkan dan atur nanti) [s/l]: 
+setup_alloc_later=Anda dapat mengatur alokasi nanti dari opsi menu 4.
+setup_complete=Semua sudah siap!
+auto_save_changed=Simpan otomatis sekarang 
+on=AKTIF
+off=NONAKTIF
+auto_process_changed=Proses otomatis saat mulai sekarang 
+language_set=Bahasa disetel ke {LANG}.
+save_file_removed=File simpanan dihapus.
+exiting_program=Keluar dari program.
+unknown_option=Opsi tidak dikenal.
+choose_setup_or_retry=Pilih: (s) membuat akun baru, (r) coba memuat file simpanan lagi setelah menaruhnya di direktori kerja: 
+retrying_load=Mencoba memuat ulang...
+still_no_save=Masih tidak dapat menemukan file simpanan. Anda dapat menaruh '{SAVE_FILENAME}' ke direktori kerja dan memilih (r) lagi, atau memilih (s) untuk menyiapkan yang baru.
+please_answer_s_or_r=Silakan jawab 's' untuk menyiapkan atau 'r' untuk mencoba lagi.
+auto_processing_start=Memproses jadwal dan bunga secara otomatis saat mulai sesuai pengaturan...
+auto_processing_done=Pemrosesan otomatis selesai.
+number_out_of_range=Nomor di luar rentang.
+category_missing_prompt=Kategori tidak ada: {NAME}. Buat (c) atau ketik ulang (r)? (c/r): 
+
+saved_to=Disimpan ke 
+please_answer_c_or_r=Silakan jawab 'c' untuk membuat atau 'r' untuk memasukkan ulang.
+schedule_type_prompt=Jenis: 1) Setiap X hari  2) Bulanan pada hari D: 
+Pilihan: 
+prompt_interval_days=Masukkan interval (hari): 
+interval_must_positive=Interval harus > 0.
+prompt_day_of_month=Masukkan hari dalam bulan (1-31): 
+prompt_amount_recurring=Jumlah (positif = pemasukan berulang, negatif = pengeluaran berulang): 
+selection_out_of_range=Pilihan di luar rentang: 
+category_not_found_ignored=Kategori tidak ditemukan: 
+no_valid_categories_selected=Tidak ada kategori valid yang dipilih.
+monthly_or_annual_prompt=(M) bulanan atau (A) tahunan? [m/a]: 
+prompt_interest_rate=Masukkan bunga (mis., '0.5%', '0,5', '5.5', '5,5%'): 
+invalid_rate_input=Input tingkat bunga tidak valid.
+processed_schedules=Jadwal diproses.
+interest_menu=Menu bunga: (a) tambah/perbarui bunga, (r) hapus bunga, (p) proses/terapkan bunga sekarang: 
+no_categories_selected=Tidak ada kategori yang dipilih.
+prompt_interest_categories=Pilih kategori untuk menerapkan bunga (nomor dipisah koma, atau nama dipisah koma): 
+interest_entries=Entri bunga:
+no_interest_entries=Tidak ada entri bunga untuk dihapus.
+enter_numbers_to_remove=Masukkan nomor (dipisah koma) untuk dihapus: 
+no_selection_made=Tidak ada pilihan dibuat.
+interest_removed_for=Bunga dihapus untuk {NAME}.
+interest_processing=Memproses dan menerapkan bunga hingga {DATE}...
+interest_applied=Bunga diterapkan.
+goodbye=Sampai jumpa!
+invalid_choice=Pilihan tidak valid.
+invalid_choice_m_or_a=Pilihan tidak valid. Silakan masukkan 'm' atau 'a'.
+
+auto_allocate_note=Alokasi otomatis hanya berlaku untuk jumlah positif. Jadwal ini negatif; akan ditulis ke kategori.
+monthly=bulanan
+annual=tahunan
+interest_set_for=Atur bunga {FREQ} {RATE}% untuk kategori '{NAME}' mulai {DATE}.
+available_languages=Bahasa tersedia:
+choose_language_prompt=Pilih kode bahasa atau nomor (kosong untuk batal): 
+current_marker=(saat ini)
+label_auto_save=1. Simpan otomatis: 
+label_auto_process=2. Proses otomatis jadwal & bunga saat mulai: 
+label_language=3. Bahasa: 
+nuke_desc=(n) Reset program (reset dan hapus file simpanan)

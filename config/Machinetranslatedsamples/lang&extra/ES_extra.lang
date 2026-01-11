@@ -1,0 +1,97 @@
+# Claves adicionales en español agregadas por la refactorización
+prompt_date=Fecha (YYYY-MM-DD) [vacío = hoy]: 
+invalid_date_format=Formato de fecha no válido. Use YYYY-MM-DD.
+
+prompt_amount=Monto (positivo = ingreso, negativo = gasto): 
+invalid_amount=Monto no válido.
+
+prompt_category_info=Ingrese la categoría o su número, o deje en blanco para Autoasignar (para ingresos).
+existing_categories=Categorías existentes:
+prompt_category=Categoría (nombre o número) [en blanco = Autoasignar]: 
+
+prompt_note=Nota: 
+
+added_auto_allocated=Agregado y autoasignado por porcentajes.
+added=Agregado.
+scheduled_added=Transacción programada agregada.
+
+alloc_intro=Ingrese el porcentaje para cada categoría o deje en blanco para mantener el actual.
+alloc_note=(Nota: el porcentaje de 'Otro' es el restante después de estas asignaciones.)
+alloc_remaining=Actualmente tiene {PCT}% disponible para Otro.
+invalid_input_extra=Entrada no válida (caracteres extra). Inténtelo de nuevo.
+invalid_input=Entrada no válida. Inténtelo de nuevo.
+invalid_number=Número no válido. Inténtelo de nuevo.
+invalid_negative_percent=No se permiten porcentajes negativos. Por favor ingrese un valor entre 0 y 100.
+invalid_percent_over=El porcentaje no puede superar 100. Por favor ingrese un valor entre 0 y 100.
+invalid_alloc_sum=Asignación no válida: las categorías suman {TOTAL}%. Debe estar entre 0 y 100. Por favor reingrese.
+allocations_updated=Asignaciones actualizadas. 'Otro' establecido al {PCT}% restante.
+prompt_category_name=Nombre de la categoría (vacío = terminar): 
+no_categories_entered=No se ingresaron categorías. Usando valores predeterminados (Emergencia, Entretenimiento, Ahorro, Otro).
+categories_created=Categorías creadas.
+
+category_setup_header=--- Configuración de categorías ---
+category_setup_prompt=Ingrese los nombres para mostrar de las categorías, uno por línea. Presione Enter en una línea vacía para finalizar.
+category_setup_defaults=Si no ingresa categorías, se usarán los valores predeterminados.
+alloc_prompt_current_percent={NAME} (actual {PCT}%) - ingrese nuevo porcentaje o deje en blanco para mantener: 
+
+saved_and_exiting=Guardado. Saliendo.
+prompt_setup_alloc=¿Desea establecer los porcentajes de asignación ahora? (s = establecer ahora, l = dejar y establecer después) [s/l]: 
+setup_alloc_later=Puede establecer las asignaciones más tarde desde la opción 4 del menú.
+setup_complete=¡Todo listo!
+auto_save_changed=El auto-guardado ahora está 
+on=ACTIVADO
+off=DESACTIVADO
+auto_process_changed=El procesamiento automático al inicio ahora está 
+language_set=Idioma establecido en {LANG}.
+save_file_removed=Archivo de guardado eliminado.
+exiting_program=Saliendo del programa.
+unknown_option=Opción desconocida.
+choose_setup_or_retry=Elija: (s) configurar una cuenta nueva, (r) reintentar cargar el archivo de guardado después de colocarlo en el directorio de trabajo: 
+retrying_load=Reintentando carga...
+still_no_save=Aún no se encuentra el archivo de guardado. Puede colocar '{SAVE_FILENAME}' en el directorio de trabajo y elegir (r) de nuevo, o elegir (s) para configurar uno nuevo.
+please_answer_s_or_r=Por favor responda 's' para configurar o 'r' para reintentar.
+auto_processing_start=Procesando automáticamente programaciones e intereses al inicio según la configuración...
+auto_processing_done=Procesamiento automático completo.
+number_out_of_range=Número fuera de rango.
+category_missing_prompt=La categoría no existe: {NAME}. ¿Crear (c) o reescribir (r)? (c/r): 
+
+saved_to=Guardado en 
+please_answer_c_or_r=Por favor responda 'c' para crear o 'r' para reingresar.
+schedule_type_prompt=Tipo: 1) Cada X días  2) Mensual el día D: 
+Elección: 
+prompt_interval_days=Ingrese intervalo (días): 
+interval_must_positive=El intervalo debe ser > 0.
+prompt_day_of_month=Ingrese día del mes (1-31): 
+prompt_amount_recurring=Monto (positivo = ingreso recurrente, negativo = gasto recurrente): 
+selection_out_of_range=Selección fuera de rango: 
+category_not_found_ignored=Categoría no encontrada: 
+no_valid_categories_selected=No se seleccionaron categorías válidas.
+monthly_or_annual_prompt=(M) mensual o (A) anual? [m/a]: 
+prompt_interest_rate=Ingrese interés (p. ej., '0.5%', '0,5', '5.5', '5,5%'): 
+invalid_rate_input=Entrada de tasa no válida.
+processed_schedules=Programaciones procesadas.
+interest_menu=Menú de interés: (a) agregar/actualizar interés, (r) quitar interés, (p) procesar/aplicar interés ahora: 
+no_categories_selected=No se seleccionaron categorías.
+prompt_interest_categories=Elija categoría(s) para aplicar interés (números separados por comas, o nombres separados por comas): 
+interest_entries=Entradas de interés:
+no_interest_entries=No hay entradas de interés para quitar.
+enter_numbers_to_remove=Ingrese números (separados por comas) para quitar: 
+no_selection_made=No se realizó ninguna selección.
+interest_removed_for=Interés eliminado para {NAME}.
+interest_processing=Procesando y aplicando interés hasta {DATE}...
+interest_applied=Interés aplicado.
+goodbye=¡Adiós!
+invalid_choice=Opción no válida.
+invalid_choice_m_or_a=Opción no válida. Por favor ingrese 'm' o 'a'.
+
+auto_allocate_note=La autoasignación solo aplica a montos positivos. Esta programación es negativa; se registrará en la categoría.
+monthly=mensual
+annual=anual
+interest_set_for=Establecer interés {FREQ} {RATE}% para la categoría '{NAME}' a partir de {DATE}.
+available_languages=Idiomas disponibles:
+choose_language_prompt=Elija código de idioma o número (en blanco para cancelar): 
+current_marker=(actual)
+label_auto_save=1. Auto-guardado: 
+label_auto_process=2. Procesamiento automático de programaciones e interés al inicio: 
+label_language=3. Idioma: 
+nuke_desc=(n) Restablecer programa (reiniciar y eliminar archivo de guardado)

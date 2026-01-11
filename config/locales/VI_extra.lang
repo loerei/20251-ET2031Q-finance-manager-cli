@@ -1,0 +1,95 @@
+# Additional Vietnamese keys added by refactor
+prompt_date=Ngày (YYYY-MM-DD) [trống = hôm nay]: 
+invalid_date_format=Định dạng ngày không hợp lệ. Dùng YYYY-MM-DD.
+
+prompt_amount=Số tiền (dương = thu nhập, âm = chi tiêu): 
+invalid_amount=Số tiền không hợp lệ.
+
+prompt_category_info=Nhập loại hoặc số của nó, hoặc để trống để tự động phân bổ (cho thu nhập).
+existing_categories=Các loại hiện có:
+prompt_category=Loại (tên hoặc số) [trống = Auto-allocate]: 
+
+prompt_note=Ghi chú: 
+
+added_auto_allocated=Đã thêm và tự động phân bổ theo phần trăm.
+added=Đã thêm.
+scheduled_added=Đã thêm lịch.
+
+alloc_intro=Nhập phần trăm cho mỗi loại, để trống để giữ giá trị hiện tại.
+alloc_note=(Ghi chú: 'Other' là phần còn lại sau khi gán.)
+alloc_remaining=Bạn hiện có {PCT}% dành cho Other.
+invalid_input_extra=Dữ liệu không hợp lệ (ký tự thừa). Thử lại.
+invalid_input=Dữ liệu không hợp lệ. Thử lại.
+invalid_number=Số không hợp lệ. Thử lại.
+invalid_negative_percent=Không cho phép âm. Nhập 0-100.
+invalid_percent_over=Phần trăm không quá 100. Nhập 0-100.
+invalid_alloc_sum=Tổng phân bổ không hợp lệ: {TOTAL}%. Phải là 0-100. Nhập lại.
+allocations_updated=Đã cập nhật phân bổ. 'Other' là {PCT}%.
+prompt_category_name=Tên loại (trống = hoàn tất): 
+no_categories_entered=Không nhập loại. Dùng mặc định (Emergency, Entertainment, Saving, Other).
+categories_created=Đã tạo loại.
+category_setup_header=--- Thiết lập loại ---
+category_setup_prompt=Nhập tên loại, mỗi dòng một loại. Nhấn Enter trên dòng trống để kết thúc.
+category_setup_defaults=Nếu không nhập, dùng mặc định.
+alloc_prompt_current_percent={NAME} (hiện {PCT}%) - nhập phần trăm mới hoặc trống để giữ: 
+saved_and_exiting=Đã lưu. Thoát.
+prompt_setup_alloc=Bạn có muốn thiết lập phần trăm phân bổ ngay không? (s = thiết lập, l = để sau) [s/l]: 
+setup_alloc_later=Bạn có thể thiết lập phân bổ sau bằng mục 4.
+setup_complete=Hoàn tất thiết lập!
+auto_save_changed=Tự động lưu bây giờ 
+on=ON
+off=OFF
+auto_process_changed=Tự động xử lý khi khởi động bây giờ 
+language_set=Ngôn ngữ đặt thành {LANG}.
+save_file_removed=Đã xóa tệp lưu.
+exiting_program=Thoát chương trình.
+unknown_option=Lựa chọn không hợp lệ.
+choose_setup_or_retry=Chọn: (s) thiết lập tài khoản mới, (r) thử tải lại tệp lưu sau khi đặt vào thư mục làm việc: 
+retrying_load=Đang thử tải lại...
+still_no_save=Vẫn không tìm thấy tệp lưu. Bạn có thể đặt '{SAVE_FILENAME}' vào thư mục làm việc và chọn (r) lại, hoặc chọn (s) để thiết lập mới.
+please_answer_s_or_r=Vui lòng trả lời 's' để thiết lập hoặc 'r' để thử lại.
+auto_processing_start=Tự động xử lý lịch và lãi tại khởi động theo cài đặt...
+auto_processing_done=Hoàn tất tự động xử lý.
+number_out_of_range=Số ngoài phạm vi.
+category_missing_prompt=Loại không tồn tại: {NAME}. Tạo (c) hay nhập lại (r)? (c/r): 
+
+saved_to=Đã lưu vào 
+please_answer_c_or_r=Vui lòng trả lời 'c' để tạo hoặc 'r' để nhập lại.
+schedule_type_prompt=Loại: 1) Mỗi X ngày  2) Hàng tháng vào ngày D: 
+Lựa chọn: 
+prompt_interval_days=Nhập khoảng ngày: 
+interval_must_positive=Khoảng phải > 0.
+prompt_day_of_month=Nhập ngày trong tháng (1-31): 
+prompt_amount_recurring=Số tiền (dương = thu nhập định kỳ, âm = chi tiêu định kỳ): 
+selection_out_of_range=Số ngoài phạm vi cho lựa chọn: 
+category_not_found_ignored=Không tìm thấy loại: 
+no_valid_categories_selected=Không có loại hợp lệ được chọn.
+monthly_or_annual_prompt=(M) hàng tháng hay (A) hàng năm? [m/a]: 
+prompt_interest_rate=Nhập lãi (ví dụ '0.5%', '0,5', '5.5', '5,5%'): 
+invalid_rate_input=Dữ liệu lãi không hợp lệ.
+processed_schedules=Đã xử lý lịch.
+interest_menu=Menu lãi: (a) thêm/cập nhật lãi, (r) xóa lãi, (p) xử lý/áp dụng lãi ngay: 
+no_categories_selected=Không có loại được chọn.
+prompt_interest_categories=Chọn loại(hoặc các loại) áp dụng lãi (số cách nhau bởi dấu phẩy, hoặc tên cách nhau dấu phẩy): 
+interest_entries=Các mục lãi:
+no_interest_entries=Không có mục lãi để xóa.
+enter_numbers_to_remove=Nhập số (các số cách nhau dấu phẩy) để xóa: 
+no_selection_made=Không chọn gì.
+interest_removed_for=Đã xóa lãi cho {NAME}
+interest_processing=Đang xử lý & áp dụng lãi đến {DATE}...
+interest_applied=Đã áp dụng lãi.
+goodbye=Tạm biệt!
+invalid_choice=Lựa chọn không hợp lệ.
+invalid_choice_m_or_a=Lựa chọn không hợp lệ. Vui lòng nhập 'm' hoặc 'a'.
+
+auto_allocate_note=Tự động phân bổ chỉ áp dụng cho số dương. Lịch này là số âm; sẽ ghi vào loại.
+monthly=hàng tháng
+annual=hàng năm
+interest_set_for=Đặt lãi {FREQ} {RATE}% cho loại '{NAME}' bắt đầu {DATE}.
+available_languages=Các ngôn ngữ có sẵn:
+choose_language_prompt=Mã ngôn ngữ hoặc số (không nhập để hủy): 
+current_marker=(đang sử dụng)
+label_auto_save=1. Tự động lưu: 
+label_auto_process=2. Tự động xử lý lịch & lãi khi khởi động: 
+label_language=3. Ngôn ngữ: 
+nuke_desc=(n) Nuke chương trình (đặt lại và xóa file lưu)

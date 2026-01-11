@@ -1,0 +1,39 @@
+# Spanish locale for Finance Manager
+LANGUAGE_NAME=Español
+menu_title=== Gestor de Finanzas ===
+menu_H=H) Guía de inicio
+menu_1=1) Añadir transacción manual
+menu_2=2) Añadir transacción programada
+menu_3=3) Mostrar resumen
+menu_4=4) Establecer porcentajes de asignación
+menu_5=5) Procesar programaciones hasta hoy
+menu_6=6) Aplicar interés de ahorro
+menu_7=7) Guardar
+menu_8=8) Cargar
+menu_9=9) Salir
+menu_10=10) Configuración
+choice=Elección: 
+available_languages=Idiomas disponibles:
+
+starting_guide_title=\n=== Guía de inicio ===\n
+guide_H=H) Guía de inicio - mostrar este mensaje de ayuda.\n
+guide_1=1) Añadir transacción manual - fecha YYYY-MM-DD (vacío = hoy), monto (+ ingreso / - gasto), categoría, nota.\n
+guide_2=2) Añadir transacción programada - recurrente cada X días o mensual el día D.\n
+guide_3=3) Mostrar resumen - saldo total, saldos por categoría, asignaciones, transacciones recientes.\n
+guide_4=4) Establecer porcentajes de asignación - definir cómo se divide el ingreso entre categorías.\n
+guide_5=5) Procesar programaciones hasta hoy - aplicar transacciones programadas vencidas.\n
+guide_6=6) Aplicar interés de ahorro - establecer tasa(s) y aplicar interés a la(s) categoría(s) seleccionada(s).\n
+guide_7=7) Guardar - escribir datos actuales en {SAVE_FILENAME}.\n
+guide_8=8) Cargar - cargar datos desde {SAVE_FILENAME}.\n
+guide_9=9) Salir - cerrar el programa.\n
+guide_10=10) Configuración - abrir Configuración (Auto-guardado, Procesamiento automático al inicio, Idioma, Restablecer).\n
+guide_return=- Comportamiento de retorno:\n- Después de cada acción se le pedirá: 'Enter para volver a la Interfaz Principal o (s) para guardar y salir:'\n  * Presione Enter para volver al menú.\n  * Escriba 's' para guardar y salir del programa.\n
+press_enter=Presione Enter para volver al menú principal.\n
+saved_exit_prompt=\nEnter para volver a la Interfaz Principal o (s) para guardar y salir: 
+invalid_choice=Opción no válida.\n
+goodbye=¡Adiós!\n
+cannot_open_load=No se puede abrir el archivo para cargar. Coloque '{SAVE_FILENAME}' en el directorio de trabajo y pruebe de nuevo.\n
+nuke_confirm=¿Realmente desea restablecer el programa? (Todo volverá a su estado inicial) [y/N]: 
+nuke_done=Programa restablecido: volvió al estado inicial.\n
+nuke_cancel=Restablecimiento cancelado.\n
+no_save_file=No hay archivo de guardado para eliminar o no se pudo eliminar (puede que no exista).\n

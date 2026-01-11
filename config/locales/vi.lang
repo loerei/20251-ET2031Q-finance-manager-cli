@@ -1,0 +1,39 @@
+# Vietnamese locale for Finance Manager
+LANGUAGE_NAME=Tiếng Việt
+menu_title=== Trình quản lý Tài chính ===
+menu_H=H) Hướng dẫn bắt đầu
+menu_1=1) Thêm giao dịch thủ công
+menu_2=2) Thêm giao dịch định kỳ
+menu_3=3) Hiển thị tóm tắt
+menu_4=4) Thiết lập tỉ lệ phân bổ
+menu_5=5) Xử lý lịch đến hôm nay
+menu_6=6) Áp dụng lãi tiết kiệm
+menu_7=7) Lưu
+menu_8=8) Tải
+menu_9=9) Thoát
+menu_10=10) Cài đặt
+choice=Lựa chọn: 
+available_languages=Các ngôn ngữ có sẵn:
+
+starting_guide_title=\n=== Hướng dẫn bắt đầu ===\n
+guide_H=H) Hướng dẫn bắt đầu - hiện hướng dẫn này.\n
+guide_1=1) Thêm giao dịch thủ công - ngày YYYY-MM-DD (trống = hôm nay), số tiền (+ thu nhập / - chi tiêu), loại, ghi chú.\n
+guide_2=2) Thêm giao dịch định kỳ - lặp mỗi X ngày hoặc hàng tháng vào ngày D.\n
+guide_3=3) Hiển thị tóm tắt - tổng số dư, số dư theo loại, phân bổ, giao dịch gần đây.\n
+guide_4=4) Thiết lập tỉ lệ phân bổ - định nghĩa cách thu nhập được chia.\n
+guide_5=5) Xử lý lịch đến hôm nay - áp dụng các giao dịch định kỳ đến hôm nay.\n
+guide_6=6) Áp dụng lãi tiết kiệm - đặt lãi cho các loại và áp dụng.\n
+guide_7=7) Lưu - ghi dữ liệu hiện tại vào {SAVE_FILENAME}.\n
+guide_8=8) Tải - tải dữ liệu từ {SAVE_FILENAME}.\n
+guide_9=9) Thoát - thoát chương trình.\n
+guide_10=10) Cài đặt - mở Cài đặt (Tự động lưu, Tự động xử lý khi khởi động, Ngôn ngữ, Nuke).\n
+guide_return=- Hành vi trả về:\n* Nhấn Enter để quay lại menu.\n* Gõ 's' để lưu và thoát chương trình.\n
+press_enter=Nhấn Enter để quay lại menu chính.\n
+saved_exit_prompt=\nNhấn Enter để quay lại giao diện chính hoặc (s) lưu và thoát: 
+invalid_choice=Lựa chọn không hợp lệ.\n
+goodbye=Tạm biệt!\n
+cannot_open_load=Không thể mở tệp để tải. Đặt '{SAVE_FILENAME}' vào thư mục làm việc và thử lại.\n
+nuke_confirm=Bạn có chắc muốn xóa mọi thứ không? (Mọi dữ liệu sẽ trở về trạng thái ban đầu) [y/N]: 
+nuke_done=Chương trình đã được nuke: trả về trạng thái ban đầu.\n
+nuke_cancel=Hủy nuke.\n
+no_save_file=Không có tệp lưu để xóa hoặc xóa thất bại (có thể không tồn tại).\n

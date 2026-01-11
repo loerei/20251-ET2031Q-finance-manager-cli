@@ -1,0 +1,39 @@
+# French locale for Finance Manager
+LANGUAGE_NAME=Français
+menu_title=== Gestionnaire de finances ===
+menu_H=H) Guide de démarrage
+menu_1=1) Ajouter une transaction manuelle
+menu_2=2) Ajouter une transaction planifiée
+menu_3=3) Afficher le résumé
+menu_4=4) Définir les pourcentages d'allocation
+menu_5=5) Traiter les planifications jusqu'à aujourd'hui
+menu_6=6) Appliquer les intérêts d'épargne
+menu_7=7) Sauvegarder
+menu_8=8) Charger
+menu_9=9) Quitter
+menu_10=10) Paramètres
+choice=Choix: 
+available_languages=Langues disponibles:
+
+starting_guide_title=\n=== Guide de démarrage ===\n
+guide_H=H) Guide de démarrage - afficher ce message d'aide.\n
+guide_1=1) Ajouter une transaction manuelle - date YYYY-MM-DD (vide = aujourd'hui), montant (+ revenu / - dépense), catégorie, note.\n
+guide_2=2) Ajouter une transaction planifiée - récurrente tous les X jours ou mensuelle le jour D.\n
+guide_3=3) Afficher le résumé - solde total, soldes par catégorie, allocations, transactions récentes.\n
+guide_4=4) Définir les pourcentages d'allocation - définir comment le revenu est réparti entre les catégories.\n
+guide_5=5) Traiter les planifications jusqu'à aujourd'hui - appliquer les transactions planifiées arrivées à échéance.\n
+guide_6=6) Appliquer les intérêts d'épargne - définir le(s) taux et appliquer les intérêts aux catégories sélectionnées.\n
+guide_7=7) Sauvegarder - écrire les données actuelles dans {SAVE_FILENAME}.\n
+guide_8=8) Charger - charger les données depuis {SAVE_FILENAME}.\n
+guide_9=9) Quitter - quitter le programme.\n
+guide_10=10) Paramètres - ouvrir Paramètres (Sauvegarde automatique, Traitement automatique au démarrage, Langue, Réinitialiser).\n
+guide_return=- Comportement de retour:\n- Après chaque action, il vous sera demandé : 'Entrée pour revenir à l'interface principale ou (s) pour sauvegarder et quitter:'\n  * Appuyez sur Entrée pour revenir au menu.\n  * Entrez 's' pour sauvegarder et quitter le programme.\n
+press_enter=Appuyez sur Entrée pour revenir au menu principal.\n
+saved_exit_prompt=\nEntrée pour revenir à l'interface principale ou (s) pour sauvegarder et quitter: 
+invalid_choice=Choix invalide.\n
+goodbye=Au revoir!\n
+cannot_open_load=Impossible d'ouvrir le fichier à charger. Placez '{SAVE_FILENAME}' dans le répertoire de travail et réessayez.\n
+nuke_confirm=Voulez-vous vraiment réinitialiser votre programme ? (Tout reviendra à son état initial) [y/N]: 
+nuke_done=Programme réinitialisé : retour à l'état initial.\n
+nuke_cancel=Réinitialisation annulée.\n
+no_save_file=Aucun fichier de sauvegarde à supprimer ou échec de suppression (il n'existe peut-être pas).\n

@@ -1,0 +1,96 @@
+# Additional German keys (translated from EN_extra)
+prompt_date=Datum (YYYY-MM-DD) [leer = heute]: 
+invalid_date_format=Ungültiges Datumsformat. Verwenden Sie YYYY-MM-DD.
+
+prompt_amount=Betrag (positiv = Einnahme, negativ = Ausgabe): 
+invalid_amount=Ungültiger Betrag.
+
+prompt_category_info=Kategorie oder deren Nummer eingeben, oder leer lassen für automatische Aufteilung (bei Einnahmen).
+existing_categories=Vorhandene Kategorien:
+prompt_category=Kategorie (Name oder Nummer) [leer = automatische Aufteilung]: 
+
+prompt_note=Notiz: 
+
+added_auto_allocated=Hinzugefügt und automatisch prozentual zugewiesen.
+added=Hinzugefügt.
+scheduled_added=Geplante Transaktion hinzugefügt.
+
+alloc_intro=Geben Sie Prozentsatz für jede Kategorie ein, oder lassen Sie leer, um den aktuellen Wert zu behalten.
+alloc_note=(Hinweis: Der Anteil für 'Andere' ist der verbleibende Prozentsatz nach diesen Zuweisungen.)
+alloc_remaining=Sie haben derzeit {PCT}% für 'Andere' verfügbar.
+invalid_input_extra=Ungültige Eingabe (zusätzliche Zeichen). Versuchen Sie es erneut.
+invalid_input=Ungültige Eingabe. Versuchen Sie es erneut.
+invalid_number=Ungültige Zahl. Versuchen Sie es erneut.
+invalid_negative_percent=Negative Prozentsätze sind nicht erlaubt. Bitte geben Sie einen Wert zwischen 0 und 100 ein.
+invalid_percent_over=Prozentsatz darf 100 nicht überschreiten. Bitte geben Sie einen Wert zwischen 0 und 100 ein.
+invalid_alloc_sum=Ungültige Aufteilung: Kategorien summieren sich auf {TOTAL}%. Muss zwischen 0 und 100 liegen. Bitte erneut eingeben.
+allocations_updated=Aufteilungen aktualisiert. 'Andere' auf verbleibende {PCT}% gesetzt.
+prompt_category_name=Kategoriename (leer = fertig): 
+no_categories_entered=Keine Kategorien eingegeben. Standardwerte werden verwendet (Notfall, Unterhaltung, Sparen, Andere).
+categories_created=Kategorien erstellt.
+
+category_setup_header=--- Kategorie Einrichtung ---
+category_setup_prompt=Geben Sie angezeigte Kategorienamen ein, je einer pro Zeile. Drücken Sie Enter auf leerer Zeile, um zu beenden.
+category_setup_defaults=Wenn Sie keine Kategorien eingeben, werden Standardwerte verwendet.
+alloc_prompt_current_percent={NAME} (aktuell {PCT}%) - neuen Prozentsatz eingeben oder leer lassen, um zu behalten: 
+
+saved_and_exiting=Gespeichert. Beende.
+prompt_setup_alloc=Möchten Sie jetzt Aufteilungsprozentsätze festlegen? (s = jetzt setzen, l = später lassen) [s/l]: 
+setup_alloc_later=Sie können die Aufteilungen später über Menüoption 4 festlegen.
+setup_complete=Alles ist eingerichtet!
+auto_save_changed=Auto-Save ist jetzt 
+on=EIN
+off=AUS
+auto_process_changed=Auto-Verarbeitung beim Start ist jetzt 
+language_set=Sprache auf {LANG} gesetzt.
+save_file_removed=Speicherdatei entfernt.
+exiting_program=Programm wird beendet.
+unknown_option=Unbekannte Option.
+choose_setup_or_retry=Wählen: (s) Neues Konto einrichten, (r) Erneut laden, nachdem Sie die Datei ins Arbeitsverzeichnis gelegt haben: 
+retrying_load=Ladevorgang wird erneut versucht...
+still_no_save=Speicherdatei noch nicht gefunden. Sie können '{SAVE_FILENAME}' ins Arbeitsverzeichnis legen und (r) wählen, oder (s) zum Einrichten wählen.
+please_answer_s_or_r=Bitte antworten Sie mit 's' zum Einrichten oder 'r' zum erneuten Versuch.
+auto_processing_start=Automatische Verarbeitung der Zeitpläne und Zinsen beim Start gemäß Einstellungen...
+auto_processing_done=Automatische Verarbeitung abgeschlossen.
+number_out_of_range=Zahl außerhalb des Bereichs.
+category_missing_prompt=Kategorie existiert nicht: {NAME}. Erstellen (c) oder neu eingeben (r)? (c/r): 
+
+saved_to=Gespeichert unter 
+please_answer_c_or_r=Bitte antworten Sie mit 'c' zum Erstellen oder 'r' zum Neuerfassen.
+schedule_type_prompt=Typ: 1) Alle X Tage  2) Monatlich am Tag D: 
+Choice=Auswahl: 
+prompt_interval_days=Intervall eingeben (Tage): 
+interval_must_positive=Intervall muss > 0 sein.
+prompt_day_of_month=Tag des Monats eingeben (1-31): 
+prompt_amount_recurring=Betrag (positiv = wiederkehrende Einnahme, negativ = wiederkehrende Ausgabe): 
+selection_out_of_range=Auswahl außerhalb des Bereichs: 
+category_not_found_ignored=Kategorie nicht gefunden: 
+no_valid_categories_selected=Keine gültigen Kategorien ausgewählt.
+monthly_or_annual_prompt=(M) monatlich oder (A) jährlich? [m/a]: 
+prompt_interest_rate=Zinssatz eingeben (z.B. '0.5%', '0,5', '5.5', '5,5%'): 
+invalid_rate_input=Ungültige Zinsangabe.
+processed_schedules=Zeitpläne verarbeitet.
+interest_menu=Zinsmenü: (a) Zins hinzufügen/aktualisieren, (r) Zins entfernen, (p) Zinsen jetzt berechnen/anwenden: 
+no_categories_selected=Keine Kategorien ausgewählt.
+prompt_interest_categories=Wählen Sie Kategorie(n) für Zinsanwendung (Nummern durch Komma getrennt oder Namen durch Komma getrennt): 
+interest_entries=Zinseinträge:
+no_interest_entries=Keine Zinseinträge zum Entfernen.
+enter_numbers_to_remove=Geben Sie Nummern ein (kommagetrennt), die entfernt werden sollen: 
+no_selection_made=Keine Auswahl getroffen.
+interest_removed_for=Zinsen für {NAME} entfernt.
+interest_processing=Zinsen bis {DATE} verarbeiten und anwenden...
+interest_applied=Zinsen angewendet.
+invalid_choice=Ungültige Auswahl.
+invalid_choice_m_or_a=Ungültige Auswahl. Bitte geben Sie 'm' oder 'a' ein.
+
+auto_allocate_note=Automatische Zuweisung gilt nur für positive Beträge. Dieser Zeitplan ist negativ; wird in die Kategorie geschrieben.
+monthly=monatlich
+annual=jährlich
+interest_set_for=Zinsen gesetzt {FREQ} {RATE}% für Kategorie '{NAME}' ab {DATE}.
+available_languages=Verfügbare Sprachen:
+choose_language_prompt=Sprache Code oder Nummer eingeben (leer zum Abbrechen): 
+current_marker=(aktuell)
+label_auto_save=1. Auto-Save: 
+label_auto_process=2. Auto Prozess Zeitpläne & Zinsen beim Start: 
+label_language=3. Sprache: 
+nuke_desc=(n) Programm zurücksetzen (zurücksetzen und Speicherdaten löschen)

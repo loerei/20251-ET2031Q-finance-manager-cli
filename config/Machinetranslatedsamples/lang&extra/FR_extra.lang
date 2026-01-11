@@ -1,0 +1,97 @@
+# Clés supplémentaires en français ajoutées par la refactorisation
+prompt_date=Date (YYYY-MM-DD) [vide = aujourd'hui]: 
+invalid_date_format=Format de date invalide. Utilisez YYYY-MM-DD.
+
+prompt_amount=Montant (positif = revenu, négatif = dépense): 
+invalid_amount=Montant invalide.
+
+prompt_category_info=Entrez la catégorie ou son numéro, ou laissez vide pour l'auto-allocation (pour les revenus).
+existing_categories=Catégories existantes:
+prompt_category=Catégorie (nom ou numéro) [vide = auto-allocation]: 
+
+prompt_note=Note: 
+
+added_auto_allocated=Ajouté et auto-alloué selon les pourcentages.
+added=Ajouté.
+scheduled_added=Transaction planifiée ajoutée.
+
+alloc_intro=Entrez le pourcentage pour chaque catégorie, ou laissez vide pour conserver l'actuel.
+alloc_note=(Note : le pourcentage de 'Autre' est le restant après ces affectations.)
+alloc_remaining=Vous avez actuellement {PCT}% disponible pour Autre.
+invalid_input_extra=Entrée invalide (caractères en trop). Réessayez.
+invalid_input=Entrée invalide. Réessayez.
+invalid_number=Nombre invalide. Réessayez.
+invalid_negative_percent=Les pourcentages négatifs ne sont pas autorisés. Veuillez entrer une valeur entre 0 et 100.
+invalid_percent_over=Le pourcentage ne peut pas dépasser 100. Veuillez entrer une valeur entre 0 et 100.
+invalid_alloc_sum=Allocation invalide : les catégories totalisent {TOTAL}%. Doit être entre 0 et 100. Veuillez ressaisir.
+allocations_updated=Allocations mises à jour. 'Autre' défini sur {PCT}% restant.
+prompt_category_name=Nom de la catégorie (vide = terminer): 
+no_categories_entered=Aucune catégorie saisie. Utilisation des valeurs par défaut (Urgence, Divertissement, Épargne, Autre).
+categories_created=Catégories créées.
+
+category_setup_header=--- Configuration des catégories ---
+category_setup_prompt=Entrez les noms d'affichage des catégories, un par ligne. Appuyez sur Entrée sur une ligne vide pour terminer.
+category_setup_defaults=Si vous ne saisissez aucune catégorie, les valeurs par défaut seront utilisées.
+alloc_prompt_current_percent={NAME} (actuel {PCT}%) - entrez un nouveau pourcentage ou laissez vide pour conserver: 
+
+saved_and_exiting=Sauvegardé. Fermeture.
+prompt_setup_alloc=Souhaitez-vous définir les pourcentages d'allocation maintenant ? (s = définir maintenant, l = laisser et définir plus tard) [s/l]: 
+setup_alloc_later=Vous pouvez définir les allocations plus tard via l'option 4 du menu.
+setup_complete=Tout est prêt !
+auto_save_changed=La sauvegarde automatique est maintenant 
+on=ACTIVE
+off=INACTIVE
+auto_process_changed=Le traitement automatique au démarrage est maintenant 
+language_set=Langue définie sur {LANG}.
+save_file_removed=Fichier de sauvegarde supprimé.
+exiting_program=Fermeture du programme.
+unknown_option=Option inconnue.
+choose_setup_or_retry=Choisissez : (s) configurer un nouveau compte, (r) réessayer de charger le fichier de sauvegarde après l'avoir placé dans le répertoire de travail : 
+retrying_load=Nouvelle tentative de chargement...
+still_no_save=Impossible de trouver le fichier de sauvegarde. Vous pouvez placer '{SAVE_FILENAME}' dans le répertoire de travail et choisir (r) à nouveau, ou choisir (s) pour configurer un nouveau.
+please_answer_s_or_r=Veuillez répondre 's' pour configurer ou 'r' pour réessayer.
+auto_processing_start=Traitement automatique des planifications et des intérêts au démarrage selon les paramètres...
+auto_processing_done=Traitement automatique terminé.
+number_out_of_range=Nombre hors limites.
+category_missing_prompt=La catégorie n'existe pas : {NAME}. La créer (c) ou ressaisir (r) ? (c/r): 
+
+saved_to=Sauvegardé vers 
+please_answer_c_or_r=Veuillez répondre 'c' pour créer ou 'r' pour ressaisir.
+schedule_type_prompt=Type : 1) Tous les X jours  2) Mensuel le jour D: 
+Choix: 
+prompt_interval_days=Entrez l'intervalle (jours): 
+interval_must_positive=L'intervalle doit être > 0.
+prompt_day_of_month=Entrez le jour du mois (1-31): 
+prompt_amount_recurring=Montant (positif = revenu récurrent, négatif = dépense récurrente): 
+selection_out_of_range=Sélection hors limites: 
+category_not_found_ignored=Catégorie introuvable: 
+no_valid_categories_selected=Aucune catégorie valide sélectionnée.
+monthly_or_annual_prompt=(M) mensuel ou (A) annuel ? [m/a]: 
+prompt_interest_rate=Entrez l'intérêt (ex. '0.5%', '0,5', '5.5', '5,5%'): 
+invalid_rate_input=Entrée de taux invalide.
+processed_schedules=Planifications traitées.
+interest_menu=Menu des intérêts : (a) ajouter/mettre à jour l'intérêt, (r) supprimer l'intérêt, (p) traiter/appliquer l'intérêt maintenant : 
+no_categories_selected=Aucune catégorie sélectionnée.
+prompt_interest_categories=Choisissez la/les catégorie(s) pour appliquer l'intérêt (nombres séparés par des virgules, ou noms séparés par des virgules) : 
+interest_entries=Entrées d'intérêts:
+no_interest_entries=Aucune entrée d'intérêt à supprimer.
+enter_numbers_to_remove=Entrez les numéros (séparés par des virgules) à supprimer : 
+no_selection_made=Aucune sélection effectuée.
+interest_removed_for=Intérêt supprimé pour {NAME}.
+interest_processing=Traitement et application des intérêts jusqu'au {DATE}...
+interest_applied=Intérêt appliqué.
+goodbye=Au revoir !
+invalid_choice=Choix invalide.
+invalid_choice_m_or_a=Choix invalide. Veuillez entrer 'm' ou 'a'.
+
+auto_allocate_note=L'auto-allocation ne s'applique qu'aux montants positifs. Cette planification est négative ; sera écrite dans la catégorie.
+monthly=mensuel
+annual=annuel
+interest_set_for=Définir l'intérêt {FREQ} {RATE}% pour la catégorie '{NAME}' à partir du {DATE}.
+available_languages=Langues disponibles:
+choose_language_prompt=Choisissez le code langue ou le numéro (vide pour annuler): 
+current_marker=(actuel)
+label_auto_save=1. Sauvegarde automatique: 
+label_auto_process=2. Traitement automatique des planifications et intérêts au démarrage: 
+label_language=3. Langue: 
+nuke_desc=(n) Réinitialiser le programme (réinitialiser et supprimer le fichier de sauvegarde)

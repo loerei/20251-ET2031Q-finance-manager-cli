@@ -1,0 +1,97 @@
+# Additional English keys added by refactor
+prompt_date=Date (YYYY-MM-DD) [empty = today]: 
+invalid_date_format=Invalid date format. Use YYYY-MM-DD.
+
+prompt_amount=Amount (positive = income, negative = expense): 
+invalid_amount=Invalid amount.
+
+prompt_category_info=Enter category or its number, or leave blank for Auto-allocate (for incomes).
+existing_categories=Existing categories:
+prompt_category=Category (name or number) [blank = Auto-allocate]: 
+
+prompt_note=Note: 
+
+added_auto_allocated=Added and auto-allocated by percentages.
+added=Added.
+scheduled_added=Scheduled transaction added.
+
+alloc_intro=Enter percentage for each category, or leave blank to keep current.
+alloc_note=(Note: 'Other' percent is the remaining after these assignments.)
+alloc_remaining=You currently have {PCT}% available for Other.
+invalid_input_extra=Invalid input (extra chars). Try again.
+invalid_input=Invalid input. Try again.
+invalid_number=Invalid number. Try again.
+invalid_negative_percent=Negative percentages are not allowed. Please enter a value between 0 and 100.
+invalid_percent_over=Percent cannot exceed 100. Please enter a value between 0 and 100.
+invalid_alloc_sum=Invalid allocation: categories sum to {TOTAL}%. Must be between 0 and 100. Please re-enter.
+allocations_updated=Allocations updated. 'Other' set to remaining {PCT}%.
+prompt_category_name=Category name (empty = finish): 
+no_categories_entered=No categories entered. Using defaults (Emergency, Entertainment, Saving, Other).
+categories_created=Categories created.
+
+category_setup_header=--- Category setup ---
+category_setup_prompt=Enter category display names, one per line. Press Enter on an empty line to finish.
+category_setup_defaults=If you enter no categories, defaults will be used.
+alloc_prompt_current_percent={NAME} (current {PCT}%) - enter new percent or blank to keep: 
+
+saved_and_exiting=Saved. Exiting.
+prompt_setup_alloc=Would you like to set allocation percentages now? (s = set now, l = leave and set later) [s/l]: 
+setup_alloc_later=You can set allocations later from menu option 4.
+setup_complete=You are all set!
+auto_save_changed=Auto-save is now 
+on=ON
+off=OFF
+auto_process_changed=Auto process at startup is now 
+language_set=Language set to {LANG}.
+save_file_removed=Save file removed.
+exiting_program=Exiting program.
+unknown_option=Unknown option.
+choose_setup_or_retry=Choose: (s)et up new account, (r)etry loading save file after placing it in working directory: 
+retrying_load=Retrying load...
+still_no_save=Still cannot find save file. You can place '{SAVE_FILENAME}' into the working directory and choose (r) again, or choose (s) to set up new.
+please_answer_s_or_r=Please answer 's' to set up or 'r' to retry.
+auto_processing_start=Auto-processing schedules and interest at startup as per settings...
+auto_processing_done=Auto-processing complete.
+number_out_of_range=Number out of range.
+category_missing_prompt=Category does not exist: {NAME}. Create it (c) or retype (r)? (c/r): 
+
+saved_to=Saved to 
+please_answer_c_or_r=Please answer 'c' to create or 'r' to re-enter.
+schedule_type_prompt=Type: 1) Every X days  2) Monthly on day D: 
+Choice: 
+prompt_interval_days=Enter interval (days): 
+interval_must_positive=Interval must be > 0.
+prompt_day_of_month=Enter day of month (1-31): 
+prompt_amount_recurring=Amount (positive = recurring income, negative = recurring expense): 
+selection_out_of_range=Selection out of range: 
+category_not_found_ignored=Category not found: 
+no_valid_categories_selected=No valid categories selected.
+monthly_or_annual_prompt=(M) monthly or (A) annually? [m/a]: 
+prompt_interest_rate=Enter interest (e.g., '0.5%', '0,5', '5.5', '5,5%'): 
+invalid_rate_input=Invalid rate input.
+processed_schedules=Processed schedules.
+interest_menu=Interest menu: (a) add/update interest, (r) remove interest, (p) process/apply interest now: 
+no_categories_selected=No categories selected.
+prompt_interest_categories=Choose category (or categories) to apply interest (numbers comma-separated, or names comma-separated): 
+interest_entries=Interest entries:
+no_interest_entries=No interest entries to remove.
+enter_numbers_to_remove=Enter numbers (comma-separated) to remove: 
+no_selection_made=No selection made.
+interest_removed_for=Removed interest for {NAME}.
+interest_processing=Processing & applying interest up to {DATE}...
+interest_applied=Interest applied.
+goodbye=Goodbye!
+invalid_choice=Invalid choice.
+invalid_choice_m_or_a=Invalid choice. Please enter 'm' or 'a'.
+
+auto_allocate_note=Auto-allocate only applies to positive amounts. This schedule is negative; will write to category.
+monthly=monthly
+annual=annual
+interest_set_for=Set interest {FREQ} {RATE}% for category '{NAME}' starting {DATE}.
+available_languages=Available languages:
+choose_language_prompt=Choose language code or number (blank to cancel): 
+current_marker=(current)
+label_auto_save=1. Auto-save: 
+label_auto_process=2. Auto process schedules & interest at startup: 
+label_language=3. Language: 
+nuke_desc=(n) Nuke program (reset and delete save file)

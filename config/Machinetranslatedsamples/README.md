@@ -1,0 +1,1 @@
+Đây là những file do AI dịch, kéo vào folder /locales, phần mềm sẽ tự động nhận diện, kiểm tra tính hợp lệ và sử dụng chúng khi khởi động.

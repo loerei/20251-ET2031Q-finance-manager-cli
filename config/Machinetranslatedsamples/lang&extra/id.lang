@@ -1,0 +1,39 @@
+# Indonesian locale for Finance Manager
+LANGUAGE_NAME=Bahasa Indonesia
+menu_title=== Pengelola Keuangan ===
+menu_H=H) Panduan Mulai
+menu_1=1) Tambah transaksi manual
+menu_2=2) Tambah transaksi terjadwal
+menu_3=3) Tampilkan ringkasan
+menu_4=4) Atur persentase alokasi
+menu_5=5) Proses jadwal hingga hari ini
+menu_6=6) Terapkan bunga tabungan
+menu_7=7) Simpan
+menu_8=8) Muat
+menu_9=9) Keluar
+menu_10=10) Pengaturan
+choice=Pilihan: 
+available_languages=Bahasa tersedia:
+
+starting_guide_title=\n=== Panduan Mulai ===\n
+guide_H=H) Panduan Mulai - tampilkan pesan bantuan ini.\n
+guide_1=1) Tambah transaksi manual - tanggal YYYY-MM-DD (kosong = hari ini), jumlah (+ pemasukan / - pengeluaran), kategori, catatan.\n
+guide_2=2) Tambah transaksi terjadwal - berulang setiap X hari atau bulanan pada hari D.\n
+guide_3=3) Tampilkan ringkasan - saldo total, saldo per kategori, alokasi, transaksi terbaru.\n
+guide_4=4) Atur persentase alokasi - tentukan bagaimana pemasukan dibagi ke kategori.\n
+guide_5=5) Proses jadwal hingga hari ini - terapkan transaksi terjadwal yang sudah jatuh tempo.\n
+guide_6=6) Terapkan bunga tabungan - atur tingkat bunga dan terapkan bunga ke kategori yang dipilih.\n
+guide_7=7) Simpan - tulis data saat ini ke {SAVE_FILENAME}.\n
+guide_8=8) Muat - muat data dari {SAVE_FILENAME}.\n
+guide_9=9) Keluar - keluar dari program.\n
+guide_10=10) Pengaturan - buka Pengaturan (Simpan otomatis, Proses otomatis saat mulai, Bahasa, Reset).\n
+guide_return=- Perilaku kembali:\n- Setelah setiap tindakan Anda akan diminta: 'Enter untuk kembali ke Antarmuka Utama atau (s)impan dan keluar:'\n  * Tekan Enter untuk kembali ke menu.\n  * Masukkan 's' untuk menyimpan dan keluar dari program.\n
+press_enter=Tekan Enter untuk kembali ke menu utama.\n
+saved_exit_prompt=\nEnter untuk kembali ke Antarmuka Utama atau (s)impan dan keluar: 
+invalid_choice=Pilihan tidak valid.\n
+goodbye=Sampai jumpa!\n
+cannot_open_load=Tidak dapat membuka file untuk dimuat. Letakkan '{SAVE_FILENAME}' di direktori kerja dan coba lagi.\n
+nuke_confirm=Apakah Anda benar-benar ingin mereset program? (Semua akan kembali ke keadaan awal) [y/N]: 
+nuke_done=Program direset: kembali ke keadaan awal.\n
+nuke_cancel=Reset dibatalkan.\n
+no_save_file=Tidak ada file simpanan untuk dihapus atau gagal menghapus (mungkin tidak ada).\n

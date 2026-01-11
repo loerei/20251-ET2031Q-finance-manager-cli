@@ -1,0 +1,134 @@
+# English locale for Finance Manager
+LANGUAGE_NAME=简体中文
+menu_title=== 财务管理器 ===
+menu_H=H) 入门指南
+menu_1=1) 添加手动交易
+menu_2=2) 添加定期交易
+menu_3=3) 显示汇总
+menu_4=4) 设置分配百分比
+menu_5=5) 处理截至今天的计划
+menu_6=6) 应用储蓄利息
+menu_7=7) 保存
+menu_8=8) 读取
+menu_9=9) 退出
+menu_10=10) 设置
+choice=选择: 
+available_languages=可用语言:
+
+starting_guide_title=\n=== 入门指南 ===\n
+guide_H=H) 入门指南 - 显示此帮助信息。\n
+guide_1=1) 添加手动交易 - 日期 YYYY-MM-DD（留空=今天）、金额（+收入 / -支出）、类别、备注。\n
+guide_2=2) 添加定期交易 - 每X天一次，或每月在第D天。\n
+guide_3=3) 显示汇总 - 总余额、各类别余额、分配、最近交易。\n
+guide_4=4) 设置分配百分比 - 定义收入如何在各类别间分配。\n
+guide_5=5) 处理截至今天的计划 - 应用到期的定期交易。\n
+guide_6=6) 应用储蓄利息 - 设置利率并对所选类别计息。\n
+guide_7=7) 保存 - 将当前数据写入 {SAVE_FILENAME}。\n
+guide_8=8) 读取 - 从 {SAVE_FILENAME} 读取数据。\n
+guide_9=9) 退出 - 退出程序。\n
+guide_10=10) 设置 - 打开设置（自动保存、启动时自动处理、语言、Nuke）。\n
+guide_return=- 返回方式:\n- 每次操作后都会提示: 'Enter to return to Main Interface or (s)ave and exist:'\n  * 按 Enter 返回菜单。\n  * 输入 's' 保存并退出。\n
+press_enter=按 Enter 返回主菜单。\n
+saved_exit_prompt=\n按 Enter 返回主界面，或输入 (s) 保存并退出: 
+invalid_choice=无效的选择。
+goodbye=再见！
+cannot_open_load=无法打开要读取的文件。请将 '{SAVE_FILENAME}' 放在工作目录中并重试。\n
+nuke_confirm=确定要“核爆”程序吗？（一切将恢复到初始状态） [y/N]: 
+nuke_done=已重置: 已恢复到初始状态。\n
+nuke_cancel=已取消重置。\n
+no_save_file=没有可删除的存档文件，或删除失败（可能不存在）。\n
+
+# ---- Extra keys ----
+prompt_date=日期（YYYY-MM-DD）[留空=今天]: 
+invalid_date_format=日期格式无效。请使用 YYYY-MM-DD。
+
+prompt_amount=金额（正=收入，负=支出）: 
+invalid_amount=金额无效。
+
+prompt_category_info=输入类别或其编号，或留空以自动分配（仅收入）。
+existing_categories=已有类别:
+prompt_category=类别（名称或编号）[留空=自动分配]: 
+
+prompt_note=备注: 
+
+added_auto_allocated=已添加，并按百分比自动分配。
+added=已添加。
+scheduled_added=已添加定期交易。
+
+alloc_intro=为每个类别输入百分比，或留空以保留当前值。
+alloc_note=（提示: 'Other' 的百分比为剩余部分。）
+alloc_remaining=当前可分配给 Other 的百分比为 {PCT}%。
+invalid_input_extra=输入无效（包含多余字符）。请重试。
+invalid_input=输入无效。请重试。
+invalid_number=数字无效。请重试。
+invalid_negative_percent=不允许负百分比。请输入 0 到 100 之间的值。
+invalid_percent_over=百分比不能超过 100。请输入 0 到 100 之间的值。
+invalid_alloc_sum=分配无效: 各类别之和为 {TOTAL}%。必须在 0 到 100 之间。请重新输入。
+allocations_updated=分配已更新。'Other' 已设为剩余的 {PCT}%。
+prompt_category_name=类别名称（留空=结束）: 
+no_categories_entered=未输入任何类别。将使用默认值（Emergency, Entertainment, Saving, Other）。
+categories_created=已创建类别。
+
+category_setup_header=--- 类别设置 ---
+category_setup_prompt=逐行输入类别显示名称，空行结束。
+category_setup_defaults=如果不输入类别，将使用默认值。
+alloc_prompt_current_percent={NAME}（当前 {PCT}%）- 输入新百分比，或留空保持: 
+
+saved_and_exiting=已保存。正在退出。
+prompt_setup_alloc=现在要设置分配百分比吗？(s=现在设置, l=先跳过稍后设置) [s/l]: 
+setup_alloc_later=以后可在菜单选项 4 中设置分配。
+setup_complete=设置完成！
+auto_save_changed=自动保存现在为 
+on=开启
+off=关闭
+auto_process_changed=启动时自动处理现在为 
+language_set=语言已设为 {LANG}。
+save_file_removed=已删除存档文件。
+exiting_program=正在退出程序。
+unknown_option=未知选项。
+choose_setup_or_retry=选择: (s) 新建账户设置，(r) 将存档放入工作目录后重试读取: 
+retrying_load=正在重试读取...
+still_no_save=仍找不到存档文件。请将 '{SAVE_FILENAME}' 放入工作目录并再次选择 (r)，或选择 (s) 进行新建设置。
+please_answer_s_or_r=请回答 's' 进行设置，或 'r' 重试。
+auto_processing_start=根据设置，启动时正在自动处理计划和利息...
+auto_processing_done=自动处理完成。
+number_out_of_range=编号超出范围。
+category_missing_prompt=类别不存在: {NAME}。创建 (c) 还是重输 (r)? (c/r): 
+
+saved_to=已保存到 
+please_answer_c_or_r=请回答 'c' 创建，或 'r' 重新输入。
+schedule_type_prompt=类型: 1) 每 X 天  2) 每月第 D 天: 
+选择: 
+prompt_interval_days=输入间隔（天）: 
+interval_must_positive=间隔必须大于 0。
+prompt_day_of_month=输入每月日期（1-31）: 
+prompt_amount_recurring=金额（正=定期收入，负=定期支出）: 
+selection_out_of_range=选择超出范围: 
+category_not_found_ignored=未找到类别: 
+no_valid_categories_selected=未选择任何有效类别。
+monthly_or_annual_prompt=(M) 每月还是 (A) 每年？[m/a]: 
+prompt_interest_rate=输入利率（例如 '0.5%', '0,5', '5.5', '5,5%'）: 
+invalid_rate_input=利率输入无效。
+processed_schedules=已处理计划。
+interest_menu=利息菜单: (a) 添加/更新利息，(r) 移除利息，(p) 现在处理/应用利息: 
+no_categories_selected=未选择类别。
+prompt_interest_categories=选择要计息的类别（编号用逗号分隔，或名称用逗号分隔）: 
+interest_entries=利息设置:
+no_interest_entries=没有可移除的利息设置。
+enter_numbers_to_remove=输入要移除的编号（逗号分隔）: 
+no_selection_made=未做选择。
+interest_removed_for=已移除 {NAME} 的利息设置。
+interest_processing=正在处理并应用截至 {DATE} 的利息...
+interest_applied=已应用利息。
+invalid_choice_m_or_a=无效的选择。请输入 'm' 或 'a'。
+
+auto_allocate_note=自动分配仅适用于正数金额。本计划为负数，将写入类别。
+monthly=每月
+annual=每年
+interest_set_for=已从 {DATE} 起为类别 '{NAME}' 设置利息：{FREQ} {RATE}%。
+choose_language_prompt=选择语言代码或编号（留空=取消）: 
+current_marker=(当前)
+label_auto_save=1. 自动保存: 
+label_auto_process=2. 启动时自动处理计划和利息: 
+label_language=3. 语言: 
+nuke_desc=(n) 重置程序（重置并删除存档文件）

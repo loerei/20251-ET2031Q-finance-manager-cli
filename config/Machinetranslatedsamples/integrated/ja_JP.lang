@@ -1,0 +1,134 @@
+# English locale for Finance Manager
+LANGUAGE_NAME=日本語
+menu_title=== 家計管理 ===
+menu_H=H) スタートガイド
+menu_1=1) 手動取引を追加
+menu_2=2) 定期取引を追加
+menu_3=3) サマリーを表示
+menu_4=4) 配分割合を設定
+menu_5=5) 今日までの予定を処理
+menu_6=6) 貯金利息を適用
+menu_7=7) 保存
+menu_8=8) 読み込み
+menu_9=9) 終了
+menu_10=10) 設定
+choice=選択: 
+available_languages=利用可能な言語:
+
+starting_guide_title=\n=== スタートガイド ===\n
+guide_H=H) スタートガイド - このヘルプを表示。\n
+guide_1=1) 手動取引を追加 - 日付 YYYY-MM-DD（空=今日）、金額（+収入 / -支出）、カテゴリ、メモ。\n
+guide_2=2) 定期取引を追加 - X日ごと、または毎月D日。\n
+guide_3=3) サマリーを表示 - 残高合計、カテゴリ別残高、配分、最近の取引。\n
+guide_4=4) 配分割合を設定 - 収入をカテゴリにどう分けるかを定義。\n
+guide_5=5) 今日までの予定を処理 - 期限の来た定期取引を適用。\n
+guide_6=6) 貯金利息を適用 - 利率を設定し、選択したカテゴリに利息を適用。\n
+guide_7=7) 保存 - 現在のデータを {SAVE_FILENAME} に書き込み。\n
+guide_8=8) 読み込み - {SAVE_FILENAME} からデータを読み込み。\n
+guide_9=9) 終了 - プログラムを終了。\n
+guide_10=10) 設定 - 設定を開く（自動保存、起動時自動処理、言語、Nuke）。\n
+guide_return=- 戻り方:\n- 各操作の後、「Enterでメイン画面に戻る / (s)で保存して終了:」と表示されます。\n  * Enterでメニューに戻ります。\n  * 's'で保存して終了します。\n
+press_enter=Enterでメインメニューに戻ります。\n
+saved_exit_prompt=\nEnterでメイン画面に戻る / (s)で保存して終了: 
+invalid_choice=無効な選択です。
+goodbye=さようなら！
+cannot_open_load=読み込み用ファイルを開けません。作業ディレクトリに '{SAVE_FILENAME}' を置いて再試行してください。\n
+nuke_confirm=本当に初期化しますか？（すべて初期状態に戻ります） [y/N]: 
+nuke_done=初期化しました: 初期状態に戻しました。\n
+nuke_cancel=初期化をキャンセルしました。\n
+no_save_file=削除する保存ファイルがないか、削除に失敗しました（存在しない可能性があります）。\n
+
+# ---- Extra keys ----
+prompt_date=日付（YYYY-MM-DD）[空=今日]: 
+invalid_date_format=日付形式が不正です。YYYY-MM-DD を使用してください。
+
+prompt_amount=金額（正=収入、負=支出）: 
+invalid_amount=金額が不正です。
+
+prompt_category_info=カテゴリ名または番号を入力、または空欄で自動配分（収入のみ）。
+existing_categories=既存のカテゴリ:
+prompt_category=カテゴリ（名前または番号）[空=自動配分]: 
+
+prompt_note=メモ: 
+
+added_auto_allocated=追加し、割合に従って自動配分しました。
+added=追加しました。
+scheduled_added=定期取引を追加しました。
+
+alloc_intro=各カテゴリの割合を入力してください。空欄で現在の値を維持します。
+alloc_note=(注: 'Other' の割合はこれらの割当後の残りです。)
+alloc_remaining=現在、Other に割り当て可能なのは {PCT}% です。
+invalid_input_extra=入力が不正です（余計な文字があります）。もう一度。
+invalid_input=入力が不正です。もう一度。
+invalid_number=数値が不正です。もう一度。
+invalid_negative_percent=負の割合は使えません。0〜100 の値を入力してください。
+invalid_percent_over=割合は 100 を超えられません。0〜100 の値を入力してください。
+invalid_alloc_sum=配分が不正です: 合計が {TOTAL}% です。0〜100 の範囲にしてください。再入力してください。
+allocations_updated=配分を更新しました。'Other' は残りの {PCT}% に設定しました。
+prompt_category_name=カテゴリ名（空=終了）: 
+no_categories_entered=カテゴリが入力されませんでした。既定値（Emergency, Entertainment, Saving, Other）を使用します。
+categories_created=カテゴリを作成しました。
+
+category_setup_header=--- カテゴリ設定 ---
+category_setup_prompt=カテゴリ表示名を1行ずつ入力してください。空行で終了します。
+category_setup_defaults=何も入力しない場合は既定値を使用します。
+alloc_prompt_current_percent={NAME}（現在 {PCT}%）- 新しい割合、または空欄で維持: 
+
+saved_and_exiting=保存しました。終了します。
+prompt_setup_alloc=今すぐ配分割合を設定しますか？(s=今設定, l=後で) [s/l]: 
+setup_alloc_later=配分はメニューの 4 から後で設定できます。
+setup_complete=設定完了！
+auto_save_changed=自動保存は現在 
+on=ON
+off=OFF
+auto_process_changed=起動時の自動処理は現在 
+language_set=言語を {LANG} に設定しました。
+save_file_removed=保存ファイルを削除しました。
+exiting_program=プログラムを終了します。
+unknown_option=不明な選択です。
+choose_setup_or_retry=選択: (s) 新規アカウント設定 / (r) 作業ディレクトリに保存ファイルを置いて再読み込み: 
+retrying_load=読み込みを再試行中...
+still_no_save=まだ保存ファイルが見つかりません。作業ディレクトリに '{SAVE_FILENAME}' を置き、(r) を再度選ぶか、(s) で新規設定してください。
+please_answer_s_or_r='s' で設定、'r' で再試行を選んでください。
+auto_processing_start=設定に従い、起動時に予定と利息を自動処理しています...
+auto_processing_done=自動処理が完了しました。
+number_out_of_range=番号が範囲外です。
+category_missing_prompt=カテゴリが存在しません: {NAME}。作成 (c) / 再入力 (r)? (c/r): 
+
+saved_to=保存しました: 
+please_answer_c_or_r='c' で作成、'r' で再入力してください。
+schedule_type_prompt=種類: 1) X日ごと  2) 毎月D日: 
+選択: 
+prompt_interval_days=間隔（日数）を入力: 
+interval_must_positive=間隔は 0 より大きくなければなりません。
+prompt_day_of_month=月の日（1-31）を入力: 
+prompt_amount_recurring=金額（正=定期収入、負=定期支出）: 
+selection_out_of_range=選択が範囲外です: 
+category_not_found_ignored=カテゴリが見つかりません: 
+no_valid_categories_selected=有効なカテゴリが選択されていません。
+monthly_or_annual_prompt=(M) 毎月 / (A) 毎年? [m/a]: 
+prompt_interest_rate=利率を入力（例: '0.5%', '0,5', '5.5', '5,5%'): 
+invalid_rate_input=利率の入力が不正です。
+processed_schedules=予定を処理しました。
+interest_menu=利息メニュー: (a) 追加/更新, (r) 削除, (p) 今すぐ処理/適用: 
+no_categories_selected=カテゴリが選択されていません。
+prompt_interest_categories=利息を適用するカテゴリを選択（番号はカンマ区切り、または名前をカンマ区切り）: 
+interest_entries=利息の設定:
+no_interest_entries=削除できる利息設定がありません。
+enter_numbers_to_remove=削除する番号を入力（カンマ区切り）: 
+no_selection_made=選択されませんでした。
+interest_removed_for={NAME} の利息を削除しました。
+interest_processing={DATE} までの利息を処理・適用しています...
+interest_applied=利息を適用しました。
+invalid_choice_m_or_a=無効な選択です。'm' または 'a' を入力してください。
+
+auto_allocate_note=自動配分は正の金額にのみ適用されます。この予定は負なので、カテゴリに記録します。
+monthly=毎月
+annual=毎年
+interest_set_for={DATE} からカテゴリ '{NAME}' に対し、{FREQ} {RATE}% の利息を設定しました。
+choose_language_prompt=言語コードまたは番号を選択（空=キャンセル）: 
+current_marker=(現在)
+label_auto_save=1. 自動保存: 
+label_auto_process=2. 起動時に予定・利息を自動処理: 
+label_language=3. 言語: 
+nuke_desc=(n) 初期化（リセットして保存ファイルを削除）

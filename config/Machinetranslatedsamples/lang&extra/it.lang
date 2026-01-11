@@ -1,0 +1,39 @@
+# Italian locale for Finance Manager
+LANGUAGE_NAME=Italiano
+menu_title=== Gestore di Finanze ===
+menu_H=H) Guida introduttiva
+menu_1=1) Aggiungi transazione manuale
+menu_2=2) Aggiungi transazione programmata
+menu_3=3) Mostra riepilogo
+menu_4=4) Imposta percentuali di allocazione
+menu_5=5) Elabora programmazioni fino a oggi
+menu_6=6) Applica interesse sul risparmio
+menu_7=7) Salva
+menu_8=8) Carica
+menu_9=9) Esci
+menu_10=10) Impostazioni
+choice=Scelta: 
+available_languages=Lingue disponibili:
+
+starting_guide_title=\n=== Guida introduttiva ===\n
+guide_H=H) Guida introduttiva - mostra questo messaggio di aiuto.\n
+guide_1=1) Aggiungi transazione manuale - data YYYY-MM-DD (vuoto = oggi), importo (+ entrata / - spesa), categoria, nota.\n
+guide_2=2) Aggiungi transazione programmata - ricorrente ogni X giorni o mensile il giorno D.\n
+guide_3=3) Mostra riepilogo - saldo totale, saldi per categoria, allocazioni, transazioni recenti.\n
+guide_4=4) Imposta percentuali di allocazione - definisci come il reddito viene suddiviso tra le categorie.\n
+guide_5=5) Elabora programmazioni fino a oggi - applica le transazioni programmate scadute.\n
+guide_6=6) Applica interesse sul risparmio - imposta la/le percentuale(i) e applica l'interesse alle categorie selezionate.\n
+guide_7=7) Salva - scrivi i dati correnti in {SAVE_FILENAME}.\n
+guide_8=8) Carica - carica i dati da {SAVE_FILENAME}.\n
+guide_9=9) Esci - chiudi il programma.\n
+guide_10=10) Impostazioni - apri Impostazioni (Salvataggio automatico, Elaborazione automatica all'avvio, Lingua, Ripristina).\n
+guide_return=- Comportamento di ritorno:\n- Dopo ogni azione verrà richiesto: 'Invio per tornare all'Interfaccia Principale o (s) per salvare e uscire:'\n  * Premi Invio per tornare al menu.\n  * Inserisci 's' per salvare e uscire dal programma.\n
+press_enter=Premi Invio per tornare al menu principale.\n
+saved_exit_prompt=\nInvio per tornare all'Interfaccia Principale o (s) per salvare e uscire: 
+invalid_choice=Scelta non valida.\n
+goodbye=Arrivederci!\n
+cannot_open_load=Impossibile aprire il file da caricare. Posiziona '{SAVE_FILENAME}' nella directory di lavoro e riprova.\n
+nuke_confirm=Vuoi davvero ripristinare il programma? (Tutto tornerà al suo stato iniziale) [y/N]: 
+nuke_done=Programma ripristinato: ritorno allo stato iniziale.\n
+nuke_cancel=Ripristino annullato.\n
+no_save_file=Nessun file di salvataggio da rimuovere o rimozione non riuscita (potrebbe non esistere).\n

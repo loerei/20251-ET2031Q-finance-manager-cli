@@ -1,0 +1,39 @@
+# English locale for Finance Manager
+LANGUAGE_NAME=English
+menu_title=== Finance Manager ===
+menu_H=H) Starting Guide
+menu_1=1) Add manual transaction
+menu_2=2) Add scheduled transaction
+menu_3=3) Show summary
+menu_4=4) Set allocation percentages
+menu_5=5) Process schedules up to today
+menu_6=6) Apply saving interest
+menu_7=7) Save
+menu_8=8) Load
+menu_9=9) Exit
+menu_10=10) Settings
+choice=Choice: 
+available_languages=Available languages:
+
+starting_guide_title=\n=== Starting Guide ===\n
+guide_H=H) Starting Guide - show this help message.\n
+guide_1=1) Add manual transaction - date YYYY-MM-DD (empty = today), amount (+ income / - expense), category, note.\n
+guide_2=2) Add scheduled transaction - recurring every X days or monthly on day D.\n
+guide_3=3) Show summary - total balance, category balances, allocations, recent txs.\n
+guide_4=4) Set allocation percentages - define how income is split across categories.\n
+guide_5=5) Process schedules up to today - apply scheduled transactions that are due.\n
+guide_6=6) Apply saving interest - set rate(s) and apply interest to selected category(ies).\n
+guide_7=7) Save - write current data to {SAVE_FILENAME}.\n
+guide_8=8) Load - load data from {SAVE_FILENAME}.\n
+guide_9=9) Exit - quit program.\n
+guide_10=10) Settings - open Settings (Auto-save, Auto-process at startup, Language, Nuke).\n
+guide_return=- Return behavior:\n- After each action you'll be prompted: 'Enter to return to Main Interface or (s)ave and exist:'\n  * Press Enter to return to menu.\n  * Enter 's' to save and exit the program.\n
+press_enter=Press Enter to go back to main menu.\n
+saved_exit_prompt=\nEnter to return to Main Interface or (s)ave and exist: 
+invalid_choice=Invalid choice.\n
+goodbye=Goodbye!\n
+cannot_open_load=Cannot open file to load. Place '{SAVE_FILENAME}' in the working directory and try again.\n
+nuke_confirm=Do you really want to nuke your program? (Everything will return to its initial state) [y/N]: 
+nuke_done=Program nuked: returned to initial state.\n
+nuke_cancel=Nuke cancelled.\n
+no_save_file=No save file to remove or failed to remove (it might not exist).\n

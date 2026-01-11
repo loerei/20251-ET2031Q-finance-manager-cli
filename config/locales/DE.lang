@@ -1,0 +1,39 @@
+# German locale for Finance Manager
+LANGUAGE_NAME=Deutsch
+menu_title=== Finanzverwaltung ===
+menu_H=H) Startanleitung
+menu_1=1) Manuelle Transaktion hinzufügen
+menu_2=2) Geplante Transaktion hinzufügen
+menu_3=3) Zusammenfassung anzeigen
+menu_4=4) Aufteilungsprozentsätze einstellen
+menu_5=5) Geplante Transaktionen bis heute verarbeiten
+menu_6=6) Zinsen anwenden
+menu_7=7) Speichern
+menu_8=8) Laden
+menu_9=9) Beenden
+menu_10=10) Einstellungen
+choice=Auswahl: 
+available_languages=Verfügbare Sprachen:
+
+starting_guide_title=\n=== Startanleitung ===\n
+guide_H=H) Startanleitung - zeigt diese Hilfemeldung an.\n
+guide_1=1) Manuelle Transaktion hinzufügen - Datum YYYY-MM-DD (leer = heute), Betrag (+ Einnahme / - Ausgabe), Kategorie, Notiz.\n
+guide_2=2) Geplante Transaktion hinzufügen - wiederkehrend alle X Tage oder monatlich am Tag D.\n
+guide_3=3) Zusammenfassung anzeigen - Kontostand, Kategoriebilanzen, Aufteilungen, letzte Transaktionen.\n
+guide_4=4) Aufteilungsprozentsätze einstellen - legen Sie fest, wie Einkommen auf Kategorien verteilt wird.\n
+guide_5=5) Geplante Transaktionen bis heute verarbeiten - fällige geplante Transaktionen anwenden.\n
+guide_6=6) Zinsen anwenden - Zinssatz(e) festlegen und auf ausgewählte Kategorie(n) anwenden.\n
+guide_7=7) Speichern - aktuelle Daten in {SAVE_FILENAME} schreiben.\n
+guide_8=8) Laden - Daten aus {SAVE_FILENAME} laden.\n
+guide_9=9) Beenden - Programm beenden.\n
+guide_10=10) Einstellungen - Einstellungen öffnen (Auto-Save, Auto-Verarbeitung beim Start, Sprache, Zurücksetzen).\n
+guide_return=- Rückkehrverhalten:\n- Nach jeder Aktion werden Sie gefragt: 'Drücken Sie Enter, um zur Hauptoberfläche zurückzukehren oder (s) zu speichern und zu beenden:'\n  * Drücken Sie Enter, um zum Menü zurückzukehren.\n  * Geben Sie 's' ein, um zu speichern und das Programm zu beenden.\n
+press_enter=Drücken Sie Enter, um zum Hauptmenü zurückzukehren.\n
+saved_exit_prompt=\nDrücken Sie Enter, um zur Hauptoberfläche zurückzukehren oder (s) zum Speichern und Beenden: 
+invalid_choice=Ungültige Auswahl.\n
+goodbye=Auf Wiedersehen!\n
+cannot_open_load=Kann Datei zum Laden nicht öffnen. Platzieren Sie '{SAVE_FILENAME}' im Arbeitsverzeichnis und versuchen Sie es erneut.\n
+nuke_confirm=Möchten Sie das Programm wirklich zurücksetzen? (Alles wird in den Anfangszustand versetzt) [y/N]: 
+nuke_done=Programm zurückgesetzt: Rückkehr zum Anfangszustand.\n
+nuke_cancel=Zurücksetzen abgebrochen.\n
+no_save_file=Keine Speicherdatei zum Entfernen vorhanden oder Entfernen fehlgeschlagen (Datei existiert möglicherweise nicht).\n
