@@ -30,8 +30,8 @@
   <summary>Nhập giao dịch thủ công (thu/chi).</summary>
 
   **Related symbols**
-  - [`Account::addManualTransaction`](src/finance_v3_0.cpp)
-  - [`main`](src/finance_v3_0.cpp)
+  - [`Account::addManualTransaction`](../src/finance_v3_0.cpp)
+  - [`main`](../src/finance_v3_0.cpp)
 
   **Đầu vào**
   - Ngày (YYYY-MM-DD hoặc để trống là hôm nay), số tiền (double), danh mục (chọn hoặc tạo), ghi chú.
@@ -48,9 +48,9 @@
   <summary>Loại lịch: mỗi N ngày hoặc hàng tháng vào một ngày trong tháng.</summary>
 
   **Related symbols**
-  - [`Account::processSchedulesUpTo`](src/finance_v3_0.cpp)
-  - [`addDays`](src/finance_v3_0.cpp)
-  - [`nextMonthlyOn`](src/finance_v3_0.cpp)
+  - [`Account::processSchedulesUpTo`](../src/finance_v3_0.cpp)
+  - [`addDays`](../src/finance_v3_0.cpp)
+  - [`nextMonthlyOn`](../src/finance_v3_0.cpp)
 
   **Đầu vào**
   - Loại lịch, tham số (ngày hoặc ngày trong tháng), số tiền, danh mục/tự phân bổ, ngày bắt đầu.
@@ -67,8 +67,8 @@
   <summary>Tự phân bổ cho số dương theo danh mục.</summary>
 
   **Related symbols**
-  - [`Account::allocateAmount`](src/finance_v3_0.cpp)
-  - [`interactiveAllocSetup`](src/finance_v3_0.cpp)
+  - [`Account::allocateAmount`](../src/finance_v3_0.cpp)
+  - [`interactiveAllocSetup`](../src/finance_v3_0.cpp)
 
   **Đầu vào**
   - Tỷ lệ phần trăm theo danh mục; số tiền thu nhập.
@@ -85,9 +85,9 @@
   <summary>Quy tắc lãi theo danh mục (tháng hoặc năm quy đổi theo tháng).</summary>
 
   **Related symbols**
-  - [`Account::applyInterestUpTo`](src/finance_v3_0.cpp)
-  - [`monthsBetweenInclusive`](src/finance_v3_0.cpp)
-  - [`addMonths`](src/finance_v3_0.cpp)
+  - [`Account::applyInterestUpTo`](../src/finance_v3_0.cpp)
+  - [`monthsBetweenInclusive`](../src/finance_v3_0.cpp)
+  - [`addMonths`](../src/finance_v3_0.cpp)
 
   **Đầu vào**
   - Danh sách danh mục, mức lãi, tần suất, ngày bắt đầu.
@@ -104,11 +104,11 @@
   <summary>Cài đặt: tự lưu, tự xử lý khi khởi động, và chọn ngôn ngữ.</summary>
 
   **Related symbols**
-  - [`Settings`](src/finance_v3_0.cpp)
-  - [`settingsMenu`](src/finance_v3_0.cpp)
-  - [`I18n::availableLanguages`](config/i18n.h)
-  - [`I18n::get`](config/i18n.h)
-  - [`tr`](src/finance_v3_0.cpp)
+  - [`Settings`](../src/finance_v3_0.cpp)
+  - [`settingsMenu`](../src/finance_v3_0.cpp)
+  - [`I18n::availableLanguages`](../config/i18n.h)
+  - [`I18n::get`](../config/i18n.h)
+  - [`tr`](../src/finance_v3_0.cpp)
 
   **Đầu vào**
   - Lựa chọn trong menu; lưu trong tệp save.
@@ -125,11 +125,11 @@
   <summary>Lưu/tải vào tệp văn bản phân tách bằng dấu `|` với cơ chế escape.</summary>
 
   **Related symbols**
-  - [`Account::saveToFile`](src/finance_v3_0.cpp)
-  - [`Account::loadFromFile`](src/finance_v3_0.cpp)
-  - [`escapeForSave`](src/finance_v3_0.cpp)
-  - [`splitEscaped`](src/finance_v3_0.cpp)
-  - [`unescapeLoaded`](src/finance_v3_0.cpp)
+  - [`Account::saveToFile`](../src/finance_v3_0.cpp)
+  - [`Account::loadFromFile`](../src/finance_v3_0.cpp)
+  - [`escapeForSave`](../src/finance_v3_0.cpp)
+  - [`splitEscaped`](../src/finance_v3_0.cpp)
+  - [`unescapeLoaded`](../src/finance_v3_0.cpp)
 
   **Đầu vào**
   - Đường dẫn hệ thống tệp, dữ liệu tài khoản trong bộ nhớ.
@@ -144,8 +144,8 @@
   <summary>Cờ CLI hỗ trợ.</summary>
 
   **Related symbols**
-  - [`main`](src/finance_v3_0.cpp)
-  - [`I18n::getLoadDiagnostics`](config/i18n.h)
+  - [`main`](../src/finance_v3_0.cpp)
+  - [`I18n::getLoadDiagnostics`](../config/i18n.h)
 
   **Chi tiết**
   - `--dump-loc`, `--list-locales`, `--dump-settings`, `--test-balance-load`.
@@ -536,3 +536,4 @@ TXS
   - Luồng thêm giao dịch
   - Danh sách/tóm tắt lịch
   - Màn hình thiết lập lãi
+
