@@ -1,6 +1,6 @@
 # 20251-ET2031Q-Finance Manager
 
-Trình quản lý tài chính cá nhân CLI bằng C++17 để theo dõi giao dịch, lịch lặp, phân bổ theo danh mục và lãi suất. Hỗ trợ giao diện đa ngôn ngữ và đường dẫn lưu trữ linh hoạt.
+Chương trình dòng lệnh đa ngôn ngữ ghi thu chi, quản lý khoản định kỳ, phân loại danh mục và theo dõi số dư.
 
 ## Tính năng
 - Ghi nhận giao dịch thu/chi thủ công kèm ghi chú
