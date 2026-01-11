@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "src/**"
+      - ".github/workflows/**"
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - "src/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++
+      - name: Build all versions
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+
+          mkdir -p bin
+          files=(src/finance_v*.cpp)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No files matched src/finance_v*.cpp"
+            echo "Either rename your sources or update the glob in CI."
+            exit 1
+          fi
+
+          for f in "${files[@]}"; do
+            base=$(basename "$f" .cpp)
+            echo "Building $f -> bin/$base"
+            g++ -std=c++17 -O2 -Wall -Wextra "$f" -o "bin/$base"
+          done
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-binaries
+          path: bin/

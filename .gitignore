@@ -1,41 +1,40 @@
-# Prerequisites
-*.d
+# Build outputs
+build/
+bin/
+out/
+Debug/
+Release/
+x64/
+Win32/
 
-# Compiled Object files
-*.slo
-*.lo
+# Compiled objects / deps
 *.o
 *.obj
+*.d
 
-# Precompiled Headers
+# Precompiled headers
 *.gch
 *.pch
 
-# Linker files
+# Linker / debug artifacts
 *.ilk
-
-# Debugger Files
 *.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+*.dwo
 
 # Executables
 *.exe
 *.out
 *.app
 
-# debug information files
-*.dwo
+# Libraries (optional, nếu bạn có build ra)
+*.lib
+*.a
+*.dll
+*.so
+*.dylib
+
+# IDE / editor
+.vscode/
+.vs/
+*.log
+*.user
