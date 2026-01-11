@@ -1,4 +1,4 @@
-# 20251-ET2031Q-finance-manager-cli
+# 20251-ET2031Q-Finance Manager
 
 CLI-based personal finance manager in C++17 for tracking transactions, recurring schedules, category allocations, and interest. Includes multi-language UI and portable save paths.
 
