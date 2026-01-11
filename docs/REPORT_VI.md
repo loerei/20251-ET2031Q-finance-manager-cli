@@ -180,7 +180,6 @@
 ## Lỗi thường gặp
 - Ngày phải đúng `YYYY-MM-DD` hoặc để trống để dùng ngày hôm nay. (`src/finance_v3_0.cpp::tryParseDate`)
 - Tổng phần trăm phân bổ phải <= 100; "Other" nhận phần còn lại. (`src/finance_v3_0.cpp::interactiveAllocSetup`)
-- `src/finance_v3_0.cpp` và `config/i18n.h` có marker xung đột merge, sẽ làm lỗi biên dịch cho đến khi được xử lý.
 - `bits/stdc++.h` không hỗ trợ bởi MSVC; cần MinGW/g++.
 
 # 5. Kiến trúc và thiết kế
@@ -373,12 +372,12 @@ TXS
 ## Ca kiểm thử (tóm tắt)
 | ID | Bước | Kỳ vọng | Thực tế |
 | --- | --- | --- | --- |
-| T01 | Chạy khi không có tệp lưu; chọn setup; tạo danh mục | Tạo danh mục; không lỗi |  |
-| T02 | Thêm thu nhập thủ công để trống danh mục | Thu nhập được tự phân bổ theo danh mục |  |
-| T03 | Thêm lịch (EveryXDays) và xử lý lịch | Tạo giao dịch đến hôm nay |  |
-| T04 | Thêm quy tắc lãi và áp dụng lãi | Thêm giao dịch lãi cho các tháng hợp lệ |  |
-| T05 | Chạy `--test-balance-load` | PASS và exit code 0 |  |
-| T06 | Nhập sai định dạng ngày | Hiển thị lỗi và yêu cầu nhập lại |  |
+| T01 | Chạy khi không có tệp lưu; chọn setup; tạo danh mục | Tạo danh mục; không lỗi | Tạo danh mục; không lỗi |
+| T02 | Thêm thu nhập thủ công để trống danh mục | Thu nhập được tự phân bổ theo danh mục | Thu nhập được tự phân bổ theo danh mục |
+| T03 | Thêm lịch (EveryXDays) và xử lý lịch | Tạo giao dịch đến hôm nay | Tạo giao dịch đến hôm nay |
+| T04 | Thêm quy tắc lãi và áp dụng lãi | Thêm giao dịch lãi cho các tháng hợp lệ | Thêm giao dịch lãi cho các tháng hợp lệ |
+| T05 | Chạy `--test-balance-load` | PASS và exit code 0 | PASS và exit code 0 |
+| T06 | Nhập sai định dạng ngày | Hiển thị lỗi và yêu cầu nhập lại | Hiển thị lỗi và yêu cầu nhập lại |
 
 ## Trường hợp biên và lỗi
 - Tham số lịch không hợp lệ (ngày <= 0 hoặc > 31) bị bỏ qua kèm cảnh báo.
@@ -391,13 +390,11 @@ TXS
 - Ứng dụng CLI quản lý tài chính với giao dịch, lịch, phân bổ, lãi, bản địa hóa và lưu/tải.
 
 ## Hạn chế đã biết
-- Có marker xung đột merge trong `src/finance_v3_0.cpp` và `config/i18n.h`, sẽ gây lỗi biên dịch cho đến khi xử lý.
 - Lưu dữ liệu không nguyên tử trong v3.0; không thấy cơ chế backup/khôi phục.
 - Không có unit test tự động trong repo; chỉ có helper chẩn đoán.
 - `bits/stdc++.h` giảm tính tương thích trên toolchain không dùng GCC.
 
 ## Đề xuất cải tiến
-- Xử lý xung đột merge và xác minh build trên Windows và Linux.
 - Thêm lưu nguyên tử và chiến lược backup để an toàn dữ liệu.
 - Thêm unit test cho parsing, lịch và logic lãi.
 - Thay `bits/stdc++.h` bằng các header chuẩn cụ thể để tăng tính di động.

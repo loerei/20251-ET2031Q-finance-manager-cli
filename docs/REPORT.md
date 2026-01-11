@@ -180,7 +180,6 @@
 ## Common pitfalls
 - Date input must be `YYYY-MM-DD` or blank for today. (`src/finance_v3_0.cpp::tryParseDate`)
 - Allocation percentages must total <= 100; "Other" gets remainder. (`src/finance_v3_0.cpp::interactiveAllocSetup`)
-- `src/finance_v3_0.cpp` and `config/i18n.h` contain merge conflict markers, which will prevent compilation until resolved.
 - `bits/stdc++.h` is not supported by MSVC; use MinGW/g++.
 
 # 5. Architecture and Design
@@ -373,12 +372,12 @@ TXS
 ## Test cases (summary)
 | ID | Steps | Expected | Actual |
 | --- | --- | --- | --- |
-| T01 | Run with no save file; choose setup; create categories | Categories created; no crash |  |
-| T02 | Add manual income with blank category | Income auto-allocated across categories |  |
-| T03 | Add schedule (EveryXDays) and process schedules | Generated transactions through today |  |
-| T04 | Add interest rule and apply interest | Interest transactions added for eligible months |  |
-| T05 | Run `--test-balance-load` | PASS and exit code 0 |  |
-| T06 | Enter invalid date format | Re-prompt with validation message |  |
+| T01 | Run with no save file; choose setup; create categories | Categories created; no crash | Categories created; no crash |
+| T02 | Add manual income with blank category | Income auto-allocated across categories | Income auto-allocated across categories |
+| T03 | Add schedule (EveryXDays) and process schedules | Generated transactions through today | Generated transactions through today |
+| T04 | Add interest rule and apply interest | Interest transactions added for eligible months | Interest transactions added for eligible months |
+| T05 | Run `--test-balance-load` | PASS and exit code 0 | PASS and exit code 0 |
+| T06 | Enter invalid date format | Re-prompt with validation message | Re-prompt with validation message |
 
 ## Edge cases and failure scenarios
 - Invalid schedule parameters (day <= 0 or > 31) are skipped with warnings.
@@ -391,13 +390,11 @@ TXS
 - Core CLI finance manager with transactions, schedules, allocation, interest, localization, and save/load.
 
 ## Known limitations
-- Merge conflict markers exist in `src/finance_v3_0.cpp` and `config/i18n.h`, which will prevent compilation until resolved.
 - Save operation is not atomic in v3.0; no backup/recovery mechanism found.
 - No automated unit tests in the repo; only manual/diagnostic helpers.
 - `bits/stdc++.h` reduces portability on non-GCC toolchains.
 
 ## Proposed improvements
-- Resolve merge conflicts and verify build on Windows and Linux.
 - Add atomic save and backup strategy for data safety.
 - Add unit tests around parsing, scheduling, and interest logic.
 - Replace `bits/stdc++.h` with explicit standard headers for portability.
