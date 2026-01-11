@@ -52,7 +52,7 @@ data/save/finance_save.txt
 The file is created automatically on the first run.
 
 ## Version history
-- See `Dev/CHANGELOG.md` for versions 1.0 through 3.0.
+- See `CHANGELOG.md` for versions 1.0 through 3.0.
 - Latest source and binary in this repo: `src/finance_v3_0.cpp` and `bin/finance_v3_0.exe`.
 
 ## Flowchart
