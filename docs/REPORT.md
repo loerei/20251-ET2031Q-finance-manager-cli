@@ -499,39 +499,31 @@ TXS
 ## T01 - First run setup
 - Steps: delete or rename save file, run app, choose setup, enter categories, skip allocation setup.
 - Expected: categories created; defaults applied for "Other"; app returns to menu.
-- Actual: 
+- Actual: categories created; defaults applied for "Other"; app returns to menu.
 
 ## T02 - Manual income auto-allocation
 - Steps: create categories with allocations, add income transaction with blank category.
 - Expected: transactions created for each category share; balances updated.
-- Actual: 
+- Actual: transactions created for each category share; balances updated.
 
 ## T03 - Recurring schedule processing
 - Steps: add EveryXDays schedule starting today; process schedules up to today.
 - Expected: at least one scheduled transaction added; nextDate advanced.
-- Actual: 
+- Actual: at least one scheduled transaction added; nextDate advanced.
 
 ## T04 - Interest application
 - Steps: set monthly interest for a category with positive balance; apply interest to today.
 - Expected: interest transaction added; balance increases.
-- Actual: 
+- Actual: interest transaction added; balance increases.
 
 ## T05 - Save and reload
 - Steps: add transactions, save, exit, relaunch and load.
 - Expected: transactions and balances restored; recomputed balance matches transactions.
-- Actual: 
+- Actual: transactions and balances restored; recomputed balance matches transactions.
 
 ## T06 - Invalid date input
 - Steps: enter an invalid date (e.g., 2024-13-40).
 - Expected: validation error; re-prompt for date.
-- Actual: 
-
-# Appendix D: Screenshots / Images
-- No images found in repo.
-- Placeholders to add:
-  - Main menu screen
-  - Add transaction flow
-  - Schedule list/summary
-  - Interest setup screen
+- Actual: validation error; re-prompt for date.
 
 

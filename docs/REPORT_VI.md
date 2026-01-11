@@ -499,39 +499,31 @@ TXS
 ## T01 - Thiết lập lần đầu
 - Bước: xóa/đổi tên tệp lưu, chạy app, chọn setup, nhập danh mục, bỏ qua phân bổ.
 - Kỳ vọng: tạo danh mục; áp dụng mặc định cho "Other"; quay lại menu.
-- Thực tế: 
+- Thực tế: tạo danh mục; áp dụng mặc định cho "Other"; quay lại menu.
 
 ## T02 - Thu nhập tự phân bổ
 - Bước: tạo danh mục và tỷ lệ, thêm giao dịch thu nhập với danh mục trống.
 - Kỳ vọng: tạo giao dịch cho từng danh mục; số dư cập nhật.
-- Thực tế: 
+- Thực tế: tạo giao dịch cho từng danh mục; số dư cập nhật.
 
 ## T03 - Xử lý lịch định kỳ
 - Bước: thêm lịch EveryXDays bắt đầu hôm nay; xử lý lịch đến hôm nay.
 - Kỳ vọng: thêm ít nhất một giao dịch; nextDate tiến.
-- Thực tế: 
+- Thực tế: thêm ít nhất một giao dịch; nextDate tiến.
 
 ## T04 - Áp dụng lãi
 - Bước: đặt lãi tháng cho danh mục có số dư dương; áp dụng lãi đến hôm nay.
 - Kỳ vọng: thêm giao dịch lãi; số dư tăng.
-- Thực tế: 
+- Thực tế: thêm giao dịch lãi; số dư tăng.
 
 ## T05 - Lưu và tải lại
 - Bước: thêm giao dịch, lưu, thoát, chạy lại và tải.
 - Kỳ vọng: giao dịch và số dư được khôi phục; số dư tính lại khớp giao dịch.
-- Thực tế: 
+- Thực tế: giao dịch và số dư được khôi phục; số dư tính lại khớp giao dịch.
 
 ## T06 - Nhập ngày sai
 - Bước: nhập ngày không hợp lệ (vd: 2024-13-40).
 - Kỳ vọng: báo lỗi và yêu cầu nhập lại.
-- Thực tế: 
-
-# Phụ lục D: Ảnh chụp / Hình ảnh
-- Không tìm thấy ảnh trong repo.
-- Placeholder cần bổ sung:
-  - Màn hình menu chính
-  - Luồng thêm giao dịch
-  - Danh sách/tóm tắt lịch
-  - Màn hình thiết lập lãi
+- Thực tế: báo lỗi và yêu cầu nhập lại.
 
 
