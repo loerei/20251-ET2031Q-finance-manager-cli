@@ -22,6 +22,11 @@ A multilingual command-line program for logging income and expenses, managing re
 - `output/` - optional debug output
 - `tests/` - reserved for additional tests (currently empty)
 
+## Project docs
+- [Work assignment](docs/work_assignment.md)
+- [Report (EN)](docs/REPORT.md)
+- [Report (VI)](docs/REPORT_VI.md)
+
 ## Build
 From the project root:
 ```bash
