@@ -1,35 +1,21 @@
-////////////////////////////////////////////////////////////////////////////////
-// Finance Manager v2.5 - Personal Finance Management System
+// Finance Manager v2.7 - Personal Finance Management System
 // 
-// A comprehensive CLI-based personal finance manager with support for:
-//   - Transaction management (manual income/expenses)
-//   - Scheduled transactions (recurring payments)
-//   - Category-based allocation with percentage distribution
-//   - Interest calculations (monthly/annual rates)
-//   - Settings management (auto-save, auto-processing, language preferences)
-//   - Multi-language UI (English, Vietnamese, and more via i18n.h)
-//   - Portable path resolution (works from any execution context)
-//   - Atomic file saving with error recovery
-//
+// CLI-based personal finance manager with support for:
+//   - Manual transactions (income/expenses) with categories and notes
+//   - Recurring schedules with date-based processing
+//   - Category allocations and balances
+//   - Savings interest calculations
+//   - Persistent save/load of account data
+// 
 // Architecture Overview:
-//   1. Core Data Structures: Transaction, Schedule, InterestEntry, Settings, Account
-//   2. Helper Utilities: Date/time, escaping, normalization, parsing
-//   3. Account Management: In-memory data + persistent save/load
-//   4. User Interface: Menu-driven CLI with multi-language support
-//   5. Main Loop: Initialization, menu processing, and graceful shutdown
-//
-// Build: g++ -std=c++17 finance2.5.cpp -o finance2.5
-// Usage: ./finance2.5 (interactive mode) or with helper flags (--dump-loc, --list-locales, etc.)
-//
-// NEW IN v2.5: Improved code organization and comprehensive documentation
-// NEW IN v2.4: Portable path resolution + i18n reload on startup
-//
-// Dependencies:
-//   - C++17 (filesystem, chrono)
-//   - config/i18n.h (translation system)
-//   - data/save/ (save file directory)
-//   - config/locales/ (language files)
-////////////////////////////////////////////////////////////////////////////////
+//   1. Core data structures: transactions, schedules, account state
+//   2. Utilities: date parsing/formatting and string helpers
+//   3. Persistence: save/load serialization and parsing
+//   4. User interface: menu-driven CLI workflows
+//   5. Main loop: initialization, menu dispatch, graceful exit
+// 
+// Build: g++ -std=c++17 finance_v2_7.cpp -o finance_v2_7
+// Usage: ./finance_v2_7 (interactive mode)
 
 #ifdef _WIN32
 #include <windows.h>
@@ -1985,3 +1971,4 @@ int main(int argc, char **argv) {
 
     return 0;
 }
+
