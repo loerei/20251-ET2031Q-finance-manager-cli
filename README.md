@@ -23,7 +23,7 @@ A multilingual command-line program for logging income and expenses, managing re
 - `tests/` - reserved for additional tests (currently empty)
 
 ## Project docs
-- [Work assignment](docs/work_assignment.md)
+- [Work assignment](docs/WORKASSIGNMENT.md)
 - [Report (EN)](docs/REPORT.md)
 - [Report (VI)](docs/REPORT_VI.md)
 
