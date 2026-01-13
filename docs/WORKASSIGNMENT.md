@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿# Phân công công việc, tiến độ dự án Finance Manager
+# Phân công công việc, tiến độ dự án Finance Manager
 
 Tài liệu này tổng hợp phân công và mốc thời gian triển khai cho dự án Finance Manager trong giai đoạn 2025-11-11 đến 2026-01-12. Kế hoạch ưu tiên theo tuần và có các mốc kiểm soát chất lượng/phát hành.
 
